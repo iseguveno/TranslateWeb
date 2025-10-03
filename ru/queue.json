@@ -1,0 +1,83 @@
+{
+  "title": "Управление очередей",
+  "filters": "Фильтры",
+  "team": "Команда",
+  "selectTeam": "Выберите команду, чтобы просмотреть элементы очереди",
+  "machine": "Машина",
+  "selectMachine": "Все машины",
+  "status": "Статус",
+  "selectStatus": "Все статусы",
+  "dateRange": "Диапазон дат",
+  "options": "Параметры",
+  "includeCompleted": "Включить завершенное",
+  "includeCancelled": "Включить отменен",
+  "onlyStale": "Только устаревшие предметы",
+  "statusPending": "В ожидании",
+  "statusRunning": "Бег",
+  "statusCompleted": "Завершенный",
+  "statusFailed": "Неуспешный",
+  "statusCancelled": "Отменен",
+  "tabs": {
+    "active": {
+      "title": "Активная очередь",
+      "tooltip": "Показывает все ожидающие, назначенные, обработку и отмену задач. Включает задачи, ожидающие подбора, и те, которые в настоящее время выполняются.",
+      "description": "В этом разделе отображаются все активные задачи, в том числе ожидающие элементы, ожидающие назначения, задачи, обрабатываемые машинами, и задачи в процессе отмены."
+    },
+    "completed": {
+      "title": "Завершенный",
+      "tooltip": "Показывает все успешно выполненные задачи",
+      "description": "В этом разделе отображаются все задачи, которые были успешно выполнены без ошибок."
+    },
+    "cancelled": {
+      "title": "Отменен",
+      "tooltip": "Показывает все отмененные задачи, которые были остановлены пользовательским запросом",
+      "description": "В этом разделе отображаются все задачи, которые были отменены по запросу пользователя. Эти задачи были остановлены до завершения."
+    },
+    "failed": {
+      "title": "Неуспешный",
+      "tooltip": "Показывает все неудачные задачи, которые столкнулись с ошибками во время выполнения",
+      "description": "В этом разделе отображаются все задачи, которые не удались из -за ошибок во время выполнения. Задачи могут быть проверены до 2 раза, прежде чем они будут постоянно отмечены как неудачные."
+    }
+  },
+  "monitoring": {
+    "completed": "Queue Task {{TaskId}} успешно завершено ({{teamName}} - {{machineName}})",
+    "cancelled": "Queue Task {{taskid}} была отменена ({{teamName}} - {{machineName}})",
+    "cancelling": "Queue Task {{TaskId}} отменяется ({{teamName}} - {{machineName}})",
+    "permanentlyFailed": "Queue Task {{TaskId}} постоянно не удалось после {{попыток}} попыток ({{teamName}} - {{machineName}})",
+    "permanentlyFailedWithReason": "Queue Task {{TaskId}} постоянно не удастся: {{anuse}} ({{teamName}} - {{machineName}})",
+    "failedWaitingRetry": "Queue Task {{taskid}} не удалось - ожидание retry (попытка {{ring}} of {{maxattempts}}) ({{teamName}} - {{machineName}})",
+    "startedProcessing": "Queue Task {{TaskId}} начал обработку ({{teamName}} - {{machinEname}})",
+    "assigned": "Queue task {{taskid}} назначен на машину ({{teamname}} - {{machineName}})",
+    "queuedForRetry": "Queue Task {{TaskId}} в очереди для retry (попытка {{попытка}} of {{maxAttempts}}) ({{teamName}} - {{machineName}})",
+    "staleTask": "Queue Task {{taskid}} кажется устаревшим (без прогресса для {{минуты}} минут)",
+    "startedMonitoring": "Начал мониторинг задачи очереди {{taskid}} ({{teamname}} - {{machineName}})",
+    "stoppedMonitoring": "Остановил мониторинг очереди задачи {{taskid}}",
+    "monitoringAlready": "Уже мониторинг задачи очереди {{taskid}}",
+    "taskNotFound": "Задача очереди {{taskid}} больше не существует"
+  },
+  "queueManager": {
+    "title": "Менеджер очередей",
+    "buttonLabel": "Высший приоритет",
+    "tooltip": "Менеджер очередей с высочайшим приоритетом",
+    "description": "Наиболее приоритетные пункты очереди (приоритет 1) управляются для обеспечения того, чтобы только одна задача была запуска на мост за раз.",
+    "emptyState": "Нет наивысших приоритетных предметов в очереди",
+    "itemQueued": "Высокая приоритетная задача в очереди. Позиция: {{position}}",
+    "cancelledTask": "Отмена существующей ожидаемой задачи для {{machineName}}",
+    "alreadyHasPriority1": "У вас уже есть задача с наивысшим приоритетом, работающая на Bridge {{bridgename}}. Пожалуйста, подождите, пока это завершит.",
+    "taskCancelled": "Задача отменена: уже есть задача приоритета 1 на этом мосту",
+    "clearCompleted": "Ясно завершен"
+  },
+  "taskStatus": {
+    "completedTitle": "Задача выполнена успешно",
+    "completedDescription": "Задача завершилась успешно после {{минуты}} минут.",
+    "cancelledTitle": "Задача отменена",
+    "cancelledDescription": "Задача была отменена и не будет обработана.",
+    "failedTitle": "Задача не удалась навсегда",
+    "failedDescription": "Задача постоянно провалилась после {{retries}} повторения."
+  },
+  "statistics": {
+    "totalDuration": "Общая продолжительность",
+    "processing": "Обработка",
+    "timeSinceAssigned": "Время с тех пор, как назначено"
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "title": "Parametrlər",
+  "company": {
+    "title": "Şirkət parametrləri",
+    "description": "Təşkilat geniş konfiqurasiyaları idarə etmək üçün şirkətinizin tonoz parametrlərini konfiqurasiya edin.",
+    "configureVault": "Qonaqları konfiqurasiya edin",
+    "modalTitle": "Şirkət tonozunu konfiqurasiya edin"
+  },
+  "personal": {
+    "title": "Şəxsi parametrlər",
+    "description": "Təcrübənizi tənzimləmək üçün şəxsi tonoz parametrlərinizi konfiqurasiya edin.",
+    "configureVault": "Qonaqları konfiqurasiya edin",
+    "modalTitle": "İstifadəçi tonozunu konfiqurasiya edin"
+  },
+  "twoFactorAuth": {
+    "title": "İki amil identifikasiyası",
+    "status": {
+      "enabled": "İki amil identifikasiyası aktivdir",
+      "disabled": "İki faktorlu identifikasiya əlil",
+      "enabledDescription": "Hesabınız əlavə bir təhlükəsizlik təbəqəsi ilə qorunur.",
+      "disabledDescription": "Hesabınıza əlavə bir təhlükəsizlik qatını əlavə edin."
+    },
+    "whatIs": {
+      "title": "İki amil identifikasiyası nədir?",
+      "description": "İki faktorlu identifikasiya (TFA), şifrənizdən əlavə telefonunuzdan bir zamanlı kod tələb edərək hesabınıza əlavə bir təhlükəsizlik qatını əlavə edir.",
+      "benefit1": "Şifrəniz pozulsa belə, hesabınızı qoruyur",
+      "benefit2": "Sənaye-standart totp (vaxt əsaslı birdəfəlik parol) alqoritmindən istifadə edir",
+      "benefit3": "Google Authenticator, AXCENTY və ya Microsoft Authenticator kimi məşhur identifikator tətbiqləri ilə işləyir"
+    },
+    "enable": "İki faktorlu identifikasiyanı aktivləşdirin",
+    "disable": "İki faktorlu identifikasiyanı deaktiv edin",
+    "setupMethods": {
+      "qrCode": "Qr kodu",
+      "manual": "Əllə giriş"
+    },
+    "scanQRCode": "Bu QR kodunu təsdiqləyici tətbiqinizlə skan edin",
+    "manualSetup": {
+      "title": "Əl ilə quraşdırma",
+      "instructions": "Authenticator tətbiqinizdə bu gizli açarı daxil edin:"
+    },
+    "important": "Əhəmiyyətli",
+    "saveSecretWarning": "Bu gizli açarı etibarlı bir yerdə saxlayın. Authenticator cihazınızı itirirsinizsə, hesabınıza girişi bərpa etmək üçün ehtiyacınız olacaq.",
+    "secretCopied": "Gizli açar panoya kopyalandı",
+    "done": "Tamamlandı",
+    "enableSuccess": {
+      "title": "İki amil identifikasiyası effektivdir!",
+      "subtitle": "Hesabınız indi TFA ilə qorunur.",
+      "verified": "TFA uğurla təsdiqləndi",
+      "verifiedDescription": "Authenticator tətbiqiniz uğurla konfiqurasiya edildi və iki amil identifikasiyası artıq hesabınızda aktivdir."
+    },
+    "verification": {
+      "title": "Authenticatorunuzu yoxlayın",
+      "subtitle": "QR kodunu skan edin və ya təsdiqləyici tətbiqinizdə gizli açarı daxil edin, sonra yoxlamaq üçün 6 rəqəmli kodu daxil edin.",
+      "codeLabel": "Doğrulama kodu",
+      "codePlaceholder": "000000",
+      "codeRequired": "Doğrulama kodu tələb olunur",
+      "codeLength": "Kod tam 6 rəqəm olmalıdır",
+      "codeFormat": "Kod yalnız nömrələr olmalıdır",
+      "submit": "TFA-nı yoxlayın və aktivləşdirin"
+    },
+    "enableModal": {
+      "title": "İki faktorlu identifikasiyanı aktivləşdirin",
+      "warning": "Təhlükəsizlik yoxlaması tələb olunur",
+      "warningDescription": "Zəhmət olmasa iki faktorlu identifikasiyanı təmin etmək üçün hesab şifrənizi daxil edin.",
+      "passwordLabel": "Cari parol",
+      "passwordPlaceholder": "Cari şifrənizi daxil edin",
+      "passwordRequired": "Şifrə tələb olunur",
+      "submit": "TFA-nu aktivləşdirin"
+    },
+    "disableModal": {
+      "title": "İki faktorlu identifikasiyanı deaktiv edin",
+      "warning": "Təhlükəsizlik xəbərdarlığı",
+      "warningDescription": "TFA-nı deaktiv etmək hesabınızı daha az etibarlı hala gətirəcəkdir. Cari şifrənizi və davam etmək üçün etibarlı bir TFA kodunuzu daxil etməlisiniz.",
+      "passwordLabel": "Cari parol",
+      "passwordPlaceholder": "Cari şifrənizi daxil edin",
+      "passwordRequired": "Şifrə tələb olunur",
+      "codeLabel": "TFA kodu",
+      "codePlaceholder": "000000",
+      "codeRequired": "TFA kodu tələb olunur",
+      "codeLength": "Kod tam 6 rəqəm olmalıdır",
+      "codeFormat": "Kod yalnız nömrələr olmalıdır",
+      "submit": "TFA-nu deaktiv edin"
+    }
+  }
+}

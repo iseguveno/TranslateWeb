@@ -1,0 +1,6 @@
+npm install google-translate-api-x
+
+node appsync.js ./en de //en içindeki tüm .json formatındaki dosyaları de klasorune almancaya cevirir.
+
+
+node aps3.js ./en ./tr tr  //İngilizce JSON klasörünü Türkçeye çevirip ./tr klasörüne kaydet:

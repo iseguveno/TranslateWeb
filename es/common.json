@@ -1,0 +1,545 @@
+{
+  "navigation": {
+    "dashboard": "Panel",
+    "architecture": "Arquitectura",
+    "resources": "Recursos",
+    "distributedStorage": "Almacenamiento distribuido",
+    "marketplace": "Mercado",
+    "queue": "Cola",
+    "system": "Sistema",
+    "audit": "Auditoría",
+    "logout": "Cierre de sesión",
+    "mainNavigation": "Navegación principal",
+    "openMobileMenu": "Abrir menú móvil",
+    "closeMobileMenu": "Cerrar el menú móvil"
+  },
+  "actions": {
+    "edit": "Editar",
+    "delete": "Borrar",
+    "search": "Buscar",
+    "reset": "Reiniciar",
+    "cancel": "Cancelar",
+    "create": "Crear",
+    "save": "Ahorrar",
+    "retry": "Rever",
+    "refresh": "Refrescar",
+    "fullscreen": "Pantalla completa",
+    "exitFullscreen": "Salir con pantalla completa",
+    "addToQueue": "Agregar a la cola",
+    "viewTrace": "Vista traza",
+    "close": "Cerca",
+    "back": "Atrás",
+    "manage": "Administrar",
+    "remote": "Remota",
+    "advanced": "Avanzada",
+    "trace": "Rastro",
+    "runFunction": "Función de ejecución",
+    "editVault": "Editar bóveda",
+    "createResource": "Crear {{recurso}}",
+    "editResource": "Editar {{recurso}}",
+    "clearSelection": "Selección clara",
+    "remove": "Eliminar"
+  },
+  "close": "Cerca",
+  "copiedToClipboard": "Copiada al portapapeles",
+  "copyFailed": "No se pudo copiar al portapapeles",
+  "export": "Exportar",
+  "exportCSV": "Exportar como CSV",
+  "exportJSON": "Exportar como JSON",
+  "refresh": "Refrescar",
+  "today": "Hoy",
+  "yesterday": "Ayer",
+  "last7Days": "Últimos 7 días",
+  "last30Days": "Últimos 30 días",
+  "thisMonth": "Este mes",
+  "lastMonth": "Mes pasado",
+  "messages": {
+    "success": "Éxito",
+    "required": "Este campo es obligatorio",
+    "invalidEmail": "Dirección de correo electrónico no válida",
+    "loading": "Cargando...",
+    "error": "Error"
+  },
+  "table": {
+    "actions": "Comportamiento",
+    "showingRecords": "Mostrando registros {{inicio}}-{{end}} de {{Total}}"
+  },
+  "status": {
+    "label": "Estado",
+    "initializing": "Inicializando ...",
+    "waitingForExecution": "Esperando la ejecución",
+    "processing": "Tratamiento",
+    "running": "Correr"
+  },
+  "language": {
+    "select": "Lenguaje seleccionado",
+    "en": "Inglesa",
+    "es": "Española",
+    "fr": "Francesa",
+    "de": "Alemana",
+    "zh": "China",
+    "ja": "Japonesa",
+    "ar": "árabe",
+    "tr": "Turca"
+  },
+  "theme": {
+    "light": "Ligera",
+    "dark": "Oscura"
+  },
+  "uiMode": {
+    "simple": "Sencilla",
+    "expert": "Experta",
+    "switching": "Cambiar a {{mode}} modo ..."
+  },
+  "general": {
+    "versionFormat": "V {{versión}}",
+    "loading": "Cargando...",
+    "showingRecords": "Mostrando registros {{inicio}}-{{end}} de {{Total}}",
+    "defaultsApplied": "Valores predeterminados aplicados",
+    "important": "Importante",
+    "cancel": "Cancelar",
+    "vaultVersion": "Versión de bóveda"
+  },
+  "total": "Total",
+  "none": "Ninguna",
+  "noMatchingResults": "Sin resultados coincidentes",
+  "current": "Actual",
+  "utilized": "Utilizado",
+  "fields": {
+    "vault": "Configuración de bóveda"
+  },
+  "yes": "Sí",
+  "no": "No",
+  "dashboard": {
+    "availablePlans": "Planes disponibles",
+    "upgradeOptions": "Opciones de actualización",
+    "currentPlan": "Plan actual",
+    "comparePlansDescription": "Compare características y precios en diferentes niveles de suscripción",
+    "elitePlanDescription": "Estás en nuestro plan de nivel más alto con todas las características desbloqueadas"
+  },
+  "vaultEditor": {
+    "vaultConfiguration": "Configuración de bóveda",
+    "vaultVersion": "Versión de bóveda:",
+    "versionAutoIncrement": "La versión se incrementará automáticamente en guardar",
+    "importJson": "Importar json",
+    "exportJson": "Exportación JSON",
+    "unsavedChanges": "Cambios no salvados",
+    "versionWillIncrement": "La versión se incrementará a {{versión}}",
+    "saveVaultConfiguration": "Guardar la configuración de la bóveda",
+    "validationErrors": "Errores de validación:",
+    "pleaseFixErrors": "Corregir los errores de validación antes de guardar",
+    "noChangesToSave": "No hay cambios para guardar",
+    "unknownEntityType": "Tipo de entidad desconocida",
+    "unknownEntityDescription": "El tipo de entidad \"{{type}}\" no está definido en las definiciones de bóveda.",
+    "requiredFields": "Campos requeridos",
+    "optionalFields": "Campos opcionales",
+    "extraFields": "Campos adicionales (no en el esquema)",
+    "extraFieldsTooltip": "Estos campos fueron importados pero no se definen en el esquema",
+    "extraFieldsWarning": "Advertencia",
+    "extraFieldsWarningDescription": "Estos campos no se definen en el esquema y se almacenarán bajo 'Extrafields' en la estructura JSON.",
+    "rawJsonEditor": "Editor de JSON Raw (modo experto)",
+    "rawJsonTooltip": "Edición directa de JSON - ¡Use con precaución!",
+    "expertModeOnly": "Solo modo experto",
+    "expertModeDescription": "La edición directa de JSON puede romper la funcionalidad del sistema si no se hace correctamente. Solo modifique si comprende el esquema de bóveda y las implicaciones.",
+    "fields.CLUSTER.description": "Configurar la configuración del clúster de almacenamiento distribuido CEPH",
+    "fields.POOL.description": "Configurar la configuración del grupo de almacenamiento Ceph",
+    "fields.IMAGE.description": "Configurar configuraciones de imagen RBD",
+    "fields.SNAPSHOT.description": "Configurar la configuración de instantánea de RBD",
+    "fields.CLONE.description": "Configurar configuraciones de clonos RBD",
+    "jsonError": "Error JSON",
+    "formatJson": "Formato json",
+    "resetToFormValues": "Reiniciar para formar valores",
+    "isRequired": "{{campo}} es necesario",
+    "invalidFormat": "Formato no válido. {{descripción}}",
+    "minLength": "La longitud mínima es {{longitud}}",
+    "maxLength": "La longitud máxima es {{longitud}}",
+    "minValue": "El valor mínimo es {{valor}}",
+    "maxValue": "El valor máximo es {{valor}}",
+    "mustBeValidJson": "Debe ser válida JSON",
+    "mustBeArray": "Debe ser una matriz",
+    "mustBeValidJsonArray": "Debe ser una matriz JSON válida",
+    "enterJsonObject": "Ingrese el objeto JSON",
+    "enterJsonArray": "Ingrese la matriz JSON",
+    "portPlaceholder": "Número de puerto (1-65535)",
+    "example": "Ejemplo:",
+    "advanced": "Avanzada",
+    "failedToSerialize": "No se pudo serializar los datos a JSON",
+    "invalidJsonFormat": "Formato JSON no válido",
+    "failedToParseJson": "No logró analizar JSON:",
+    "fieldsMovedToExtra": "{{count}} campo (s) se movió a ExtraFields: {{Fields}}",
+    "fieldsMovedFromExtra": "{{count}} campo (s) restaurado desde extrafields: {{campos}}",
+    "sshPasswordRequiredWhenNoKey": "Se requiere una contraseña de SSH para la configuración de clave inicial",
+    "providerFields": "{{proveedor}} configuración",
+    "providerRequiredFields": "Campos requeridos para {{proveedor}}",
+    "testConnection": {
+      "button": "Conexión de prueba",
+      "missingFields": "Complete la dirección IP, el nombre de usuario y la contraseña antes de probar",
+      "initiated": "Se ha iniciado la prueba de conexión SSH. Consulte la cola para obtener resultados.",
+      "success": "Conexión ssh exitosa",
+      "failed": "La conexión SSH falló",
+      "testing": "Conexión de prueba ..."
+    },
+    "systemCompatibility": {
+      "title": "Compatibilidad del sistema",
+      "systemInfo": "Información del sistema",
+      "kernelVersion": "Versión de kernel",
+      "operatingSystem": "Sistema operativo",
+      "btrfsAvailable": "BTRFS disponible",
+      "compatibilityStatus": "Estado de compatibilidad",
+      "compatible": "Compatible",
+      "warning": "Advertencia",
+      "incompatible": "Incompatible",
+      "unknown": "Desconocida",
+      "knownIssues": "Problemas conocidos",
+      "recommendations": "Recomendaciones",
+      "yes": "Sí",
+      "no": "No"
+    },
+    "fields": {
+      "MACHINE": {
+        "description": "Configuración de la máquina para el acceso y el almacenamiento de SSH",
+        "ip": {
+          "label": "Dirección IP",
+          "description": "Dirección IP de la máquina"
+        },
+        "user": {
+          "label": "Nombre de usuario",
+          "description": "SSH Nombre de usuario para la conexión"
+        },
+        "datastore": {
+          "label": "Ruta del almacén de datos",
+          "description": "Ruta de directorio para almacenar datos. Si se encuentra en un sistema de archivos BTRFS, utilizará características nativas. De lo contrario, se creará y se montará un archivo de grupo de almacenamiento BTRFS para habilitar las instantáneas y la compresión"
+        },
+        "port": {
+          "label": "Puerto ssh",
+          "description": "Número de puerto ssh"
+        },
+        "host_entry": {
+          "label": "Entrada del host",
+          "description": "SSH Conocido al anfitrión conocida para la verificación de seguridad"
+        },
+        "ssh_key_configured": {
+          "label": "Clave SSH ya configurada",
+          "description": "Verifique esto si la clave pública SSH ya está instalada en la máquina de destino"
+        },
+        "ssh_password": {
+          "label": "Contraseña SSH (temporal)",
+          "description": "Contraseña temporal para la configuración inicial de la tecla SSH. Deje vacío si la tecla SSH ya está configurada. Esta contraseña se usa una vez para copiar la clave pública y debe eliminarse después para obtener seguridad."
+        }
+      },
+      "REPOSITORY": {
+        "description": "Configuración del repositorio para el almacenamiento de copia de seguridad",
+        "name": {
+          "label": "Nombre de repositorio",
+          "description": "Identificador de nombre del repositorio"
+        },
+        "credential": {
+          "label": "Acceder contraseña",
+          "description": "Contraseña de acceso al repositorio (32 caracteres, alfanumérico + caracteres especiales)"
+        },
+        "encryption": {
+          "label": "Habilitar cifrado",
+          "description": "Habilitar el cifrado para el repositorio"
+        },
+        "retention": {
+          "label": "Política de retención",
+          "description": "Configuración de la política de retención"
+        },
+        "schedule": {
+          "label": "Horario de respaldo",
+          "description": "Expresión cron para copias de seguridad automatizadas"
+        }
+      },
+      "STORAGE": {
+        "entityDescription": "Configuración de almacenamiento para destinos de copia de seguridad",
+        "name": {
+          "label": "Nombre de almacenamiento",
+          "description": "Nombre único para esta configuración de almacenamiento"
+        },
+        "provider": {
+          "label": "Proveedor de almacenamiento",
+          "description": "Seleccione el tipo de proveedor de almacenamiento"
+        },
+        "description": {
+          "label": "Descripción",
+          "description": "Descripción opcional de esta configuración de almacenamiento"
+        },
+        "noVersioning": {
+          "label": "Deshabilitar el versioning",
+          "description": "Deshabilitar el control de versiones para este almacenamiento"
+        },
+        "parameters": {
+          "label": "Parámetros adicionales",
+          "description": "Parámetros rClone adicionales para la configuración avanzada"
+        }
+      },
+      "SCHEDULE": {
+        "description": "Programar configuración para tareas automatizadas",
+        "cron": {
+          "label": "Expresión cron",
+          "description": "Expresión cron que define el horario"
+        },
+        "timezone": {
+          "label": "Zona horaria",
+          "description": "Zona horaria para la ejecución del horario"
+        },
+        "enabled": {
+          "label": "Habilitar el horario",
+          "description": "Si este horario está activo"
+        }
+      },
+      "BRIDGE": {
+        "description": "Configuración del puente para la conectividad de red",
+        "ip": {
+          "label": "Dirección IP",
+          "description": "Dirección IP del servidor Bridge"
+        }
+      },
+      "REGION": {
+        "description": "Configuración de la región para la distribución geográfica",
+        "name": {
+          "label": "Nombre de la región",
+          "description": "Nombre de la región geográfica"
+        },
+        "code": {
+          "label": "Código de región",
+          "description": "Código corto para la región"
+        }
+      },
+      "TEAM": {
+        "description": "Configuración del equipo para la estructura organizacional",
+        "name": {
+          "label": "Nombre del equipo",
+          "description": "Nombre del equipo"
+        },
+        "teamDescription": {
+          "label": "Descripción del equipo",
+          "description": "Descripción del propósito y las responsabilidades del equipo"
+        },
+        "SSH_PRIVATE_KEY": {
+          "label": "Clave privada SSH",
+          "description": "Clave privada SSH codificada en Base64 para operaciones de equipo"
+        },
+        "SSH_PUBLIC_KEY": {
+          "label": "Clave pública de SSH",
+          "description": "Clave pública SSH para operaciones de equipo"
+        }
+      },
+      "USER": {
+        "description": "Configuración de usuario para configuraciones personales",
+        "SSH_PRIVATE_KEY": {
+          "label": "Clave privada SSH",
+          "description": "Clave privada SSH codificada en Base64 para operaciones de usuario"
+        },
+        "SSH_PUBLIC_KEY": {
+          "label": "Clave pública de SSH",
+          "description": "Clave pública SSH para operaciones de usuario"
+        }
+      },
+      "COMPANY": {
+        "description": "Configuración de la empresa para configuraciones de toda la organización",
+        "UNIVERSAL_USER_ID": {
+          "label": "ID de usuario universal",
+          "description": "ID de usuario universal para operaciones del sistema"
+        },
+        "UNIVERSAL_USER_NAME": {
+          "label": "Nombre de usuario universal",
+          "description": "Nombre de usuario universal para operaciones del sistema"
+        },
+        "DOCKER_JSON_CONF": {
+          "label": "Configuración de Docker",
+          "description": "Configuración de autenticación de Docker Registry"
+        },
+        "SSH_PRIVATE_KEY": {
+          "label": "Clave privada SSH",
+          "description": "Clave privada SSH codificada en Base64 para operaciones de la empresa"
+        },
+        "SSH_PUBLIC_KEY": {
+          "label": "Clave pública de SSH",
+          "description": "Clave pública SSH para operaciones de la empresa"
+        },
+        "LOG_FILE": {
+          "label": "Ruta del archivo de registro",
+          "description": "Ruta al archivo de registro del sistema"
+        },
+        "PLUGINS": {
+          "label": "Complementos",
+          "description": "Configuraciones de complementos con imágenes de contenedor y estado de activación"
+        }
+      },
+      "CLUSTER": {
+        "description": "Configurar la configuración del clúster de almacenamiento distribuido CEPH",
+        "monitors": {
+          "label": "Monitor nodos",
+          "description": "Lista de nodos de monitor en el clúster"
+        },
+        "mgrs": {
+          "label": "Nodos del gerente",
+          "description": "Lista de nodos gerentes en el clúster"
+        },
+        "osds": {
+          "label": "Nodos OSD",
+          "description": "Lista de nodos OSD (Daemon de almacenamiento de objetos)"
+        },
+        "mds": {
+          "label": "Nodos MDS",
+          "description": "Lista de nodos MDS (servidor de metadatos)"
+        },
+        "fsid": {
+          "label": "ID de sistema de archivos",
+          "description": "Identificador único para el grupo Ceph (formato UUID)"
+        },
+        "config": {
+          "label": "Configuración",
+          "description": "Opciones de configuración de clúster adicionales"
+        }
+      },
+      "POOL": {
+        "description": "Configurar la configuración del grupo de almacenamiento Ceph",
+        "pg_num": {
+          "label": "Grupos de colocación",
+          "description": "Número de grupos de colocación para la piscina"
+        },
+        "pgp_num": {
+          "label": "Número de PGP",
+          "description": "Número de grupos de colocación para fines de colocación"
+        },
+        "size": {
+          "label": "Tamaño de replicación",
+          "description": "Número de réplicas para objetos en la piscina"
+        },
+        "min_size": {
+          "label": "Tamaño mínimo",
+          "description": "Número mínimo de réplicas requeridas para E/S"
+        },
+        "crush_rule": {
+          "label": "Regla de aplastar",
+          "description": "Nombre de la regla de aplastar para la colocación de datos"
+        },
+        "application": {
+          "label": "Solicitud",
+          "description": "Tipo de aplicación para el grupo (por ejemplo, RBD, CEPHFS)"
+        }
+      },
+      "IMAGE": {
+        "description": "Configurar configuraciones de imagen RBD",
+        "size": {
+          "label": "Tamaño de imagen",
+          "description": "Tamaño de la imagen RBD (por ejemplo, 10G, 1T)"
+        },
+        "features": {
+          "label": "Características",
+          "description": "Características de RBD para habilitar la imagen"
+        },
+        "object_size": {
+          "label": "Tamaño de objeto",
+          "description": "Tamaño de objetos dentro de la imagen"
+        },
+        "stripe_unit": {
+          "label": "Unidad de rayas",
+          "description": "Tamaño de la unidad de rayas para la imagen"
+        },
+        "stripe_count": {
+          "label": "Conteo de rayas",
+          "description": "Número de rayas para la imagen"
+        },
+        "data_pool": {
+          "label": "Grupo de datos",
+          "description": "Grupo separado para almacenar datos de imágenes"
+        }
+      },
+      "SNAPSHOT": {
+        "description": "Configurar la configuración de instantánea de RBD",
+        "protected": {
+          "label": "Protegida",
+          "description": "Si la instantánea está protegida de la eliminación"
+        },
+        "timestamp": {
+          "label": "Marca de tiempo",
+          "description": "Marca de tiempo de creación de la instantánea"
+        },
+        "size": {
+          "label": "Tamaño de instantánea",
+          "description": "Tamaño de la instantánea"
+        }
+      },
+      "CLONE": {
+        "description": "Configurar configuraciones de clonos RBD",
+        "parent_pool": {
+          "label": "Piscina para padres",
+          "description": "Piscina que contiene la imagen parental"
+        },
+        "parent_image": {
+          "label": "Imagen principal",
+          "description": "Nombre de la imagen principal"
+        },
+        "parent_snapshot": {
+          "label": "Instantánea de los padres",
+          "description": "Nombre de la instantánea de los padres"
+        },
+        "features": {
+          "label": "Características",
+          "description": "Características de RBD para el clon"
+        },
+        "size": {
+          "label": "Tamaño de clon",
+          "description": "Tamaño de la imagen clon"
+        }
+      }
+    }
+  },
+  "fieldGenerator": {
+    "title": {
+      "ssh_keys": "Generar el par de claves SSH",
+      "repository_credential": "Generar credenciales de repositorio"
+    },
+    "tooltip": "Generar valor",
+    "generate": "Generar",
+    "regenerate": "Regenerada",
+    "apply": "Aplicar",
+    "cancel": "Cancelar",
+    "copy": "Copiar",
+    "copied": "¡Copiada!",
+    "keyType": "Tipo de llave",
+    "keySize": "Tamaño clave",
+    "moreSecure": "Mas segura",
+    "comingSoon": "muy pronto",
+    "generationSuccess": "Generado con éxito",
+    "generationError": "No se pudo generar. Por favor intente de nuevo.",
+    "applied": "Valores aplicados con éxito",
+    "copyError": "No se pudo copiar al portapapeles"
+  },
+  "notifications": {
+    "title": "Notificaciones",
+    "empty": "Sin notificaciones",
+    "markAllRead": "Marque todo como leído",
+    "clearAll": "Despejar todo"
+  },
+  "warnings": {
+    "sandboxEnvironment": "Entorno de sandbox",
+    "sandboxMessage": "Los datos se pueden restablecer durante las actualizaciones. Solo para probar."
+  },
+  "nestedObjectEditor": {
+    "Image": "Imagen",
+    "Active": "Activa",
+    "Add": "Agregar",
+    "Delete this entry?": "Eliminar esta entrada?",
+    "Yes": "Sí",
+    "No": "No",
+    "Object": "Objeto",
+    "Array": "Formación",
+    "True": "Verdadero",
+    "False": "FALSO",
+    "Enter key name": "Ingrese el nombre de la clave",
+    "Show JSON": "Mostrar JSON",
+    "Hide JSON": "Esconder json",
+    "No entries": "Sin entradas",
+    "Raw JSON Editor": "Editor de JSON",
+    "JSON Error": "Error JSON",
+    "Uniform Structure": "Estructura uniforme",
+    "Fields": "Campos",
+    "Container Images Detected": "Imágenes de contenedor detectadas",
+    "Plugin Configuration Detected": "Configuración del complemento detectada",
+    "Uniform Structure Detected": "Estructura uniforme detectada"
+  }
+}

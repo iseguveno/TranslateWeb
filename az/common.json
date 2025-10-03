@@ -1,0 +1,545 @@
+{
+  "navigation": {
+    "dashboard": "Tablosuna",
+    "architecture": "Memarlıq",
+    "resources": "Resurslar",
+    "distributedStorage": "Paylanmış saxlama",
+    "marketplace": "Marketplace",
+    "queue": "Növbə",
+    "system": "Sistem",
+    "audit": "Audit",
+    "logout": "Çıxmaq",
+    "mainNavigation": "Əsas naviqasiya",
+    "openMobileMenu": "Açıq mobil menyu",
+    "closeMobileMenu": "Clock Menyu"
+  },
+  "actions": {
+    "edit": "Redaktə etmək",
+    "delete": "Silmək",
+    "search": "Axtarış",
+    "reset": "Sıfırlamaq",
+    "cancel": "Ləğv etmək",
+    "create": "Yaratmaq",
+    "save": "Qurtarmaq",
+    "retry": "Yenidən cəhd etmək",
+    "refresh": "Təzələmək",
+    "fullscreen": "Tam ekran",
+    "exitFullscreen": "Tam ekrandan çıxın",
+    "addToQueue": "Növbəyə əlavə edin",
+    "viewTrace": "İz",
+    "close": "Yaxın",
+    "back": "Geri",
+    "manage": "İdarə etmək",
+    "remote": "Ucqar",
+    "advanced": "Qabaqcıl",
+    "trace": "İz",
+    "runFunction": "Qaçış funksiyası",
+    "editVault": "Vaqonu düzəltmək",
+    "createResource": "{{Resurs}} yaratmaq",
+    "editResource": "Düzəliş {{resurs}}",
+    "clearSelection": "CLEARD SEÇMƏSİ",
+    "remove": "Çıxarmaq"
+  },
+  "close": "Yaxın",
+  "copiedToClipboard": "Panoya kopyalandı",
+  "copyFailed": "Panoya kopyalana bilmədi",
+  "export": "İxrac etmək",
+  "exportCSV": "CSV kimi ixrac edin",
+  "exportJSON": "JSON kimi ixrac edin",
+  "refresh": "Təzələmək",
+  "today": "Bu gün",
+  "yesterday": "Dünən",
+  "last7Days": "Son 7 gün",
+  "last30Days": "Son 30 gün",
+  "thisMonth": "Bu ay",
+  "lastMonth": "Keçən ay",
+  "messages": {
+    "success": "Müvəffəqiyyət",
+    "required": "Bu sahə tələb olunur",
+    "invalidEmail": "Yanlış e-poçt ünvanı",
+    "loading": "Yükləmə ...",
+    "error": "Səhv"
+  },
+  "table": {
+    "actions": "Hərəkətlər",
+    "showingRecords": "{{Başlanğıc}} {{{son}} {{{son}} göstəriciləri göstərmək"
+  },
+  "status": {
+    "label": "Status",
+    "initializing": "Başlat ...",
+    "waitingForExecution": "İcra gözləyir",
+    "processing": "Emal etmək",
+    "running": "Qaçış"
+  },
+  "language": {
+    "select": "Dil seçin",
+    "en": "İngilisləşdirmək",
+    "es": "İspan dili",
+    "fr": "Fransız",
+    "de": "Almanca",
+    "zh": "Çin",
+    "ja": "Yaponca",
+    "ar": "Ərəb",
+    "tr": "Türk"
+  },
+  "theme": {
+    "light": "İşıq",
+    "dark": "Qaranlıq"
+  },
+  "uiMode": {
+    "simple": "Sadə",
+    "expert": "Mütəxəssis",
+    "switching": "{{Rejimi}} rejiminə keçmək ..."
+  },
+  "general": {
+    "versionFormat": "v {{versiya}}",
+    "loading": "Yükləmə ...",
+    "showingRecords": "{{Başlanğıc}} {{{son}} {{{son}} göstəriciləri göstərmək",
+    "defaultsApplied": "Defolt dəyərlər tətbiq olunur",
+    "important": "Əhəmiyyətli",
+    "cancel": "Ləğv etmək",
+    "vaultVersion": "Vault versiyası"
+  },
+  "total": "Cəmi",
+  "none": "Heç kim",
+  "noMatchingResults": "Uyğun nəticə yoxdur",
+  "current": "Cərəyan",
+  "utilized": "İstifadə olunan",
+  "fields": {
+    "vault": "Vault konfiqurasiyası"
+  },
+  "yes": "Bəli",
+  "no": "Yox",
+  "dashboard": {
+    "availablePlans": "Mövcud planlar",
+    "upgradeOptions": "Seçimləri təkmilləşdirin",
+    "currentPlan": "Cari plan",
+    "comparePlansDescription": "Fərqli abunə pillələri boyunca xüsusiyyətləri və qiymətləri müqayisə edin",
+    "elitePlanDescription": "Kilidi açılan bütün xüsusiyyətləri olan ən yüksək pilləli planımız var"
+  },
+  "vaultEditor": {
+    "vaultConfiguration": "Vault konfiqurasiyası",
+    "vaultVersion": "Vault versiyası:",
+    "versionAutoIncrement": "Versiya qazancda avtomatik artım olacaq",
+    "importJson": "İmports json",
+    "exportJson": "İxrac json",
+    "unsavedChanges": "Yoluxmamış dəyişikliklər",
+    "versionWillIncrement": "Versiya {{versiya}}} artacaq",
+    "saveVaultConfiguration": "Vault konfiqurasiyasını edin",
+    "validationErrors": "Doğrulama səhvləri:",
+    "pleaseFixErrors": "Xahiş edirəm qənaət etmədən əvvəl təsdiqləmə səhvlərini düzəldin",
+    "noChangesToSave": "Saxlamaq üçün dəyişiklik yoxdur",
+    "unknownEntityType": "Naməlum müəssisə növü",
+    "unknownEntityDescription": "Qurum növü \"{{tip}}\" \"tonoz anlayışlarında müəyyənləşdirilməyib.",
+    "requiredFields": "Tələb olunan sahələr",
+    "optionalFields": "İsteğe bağlı sahələr",
+    "extraFields": "Əlavə sahələr (sxemdə deyil)",
+    "extraFieldsTooltip": "Bu sahələr idxal edildi, lakin sxemdə müəyyənləşdirilmir",
+    "extraFieldsWarning": "Xəbərdarlıq",
+    "extraFieldsWarningDescription": "Bu sahələr sxemdə müəyyənləşdirilmir və JSON quruluşunda 'ekstrafields' altında saxlanacaqdır.",
+    "rawJsonEditor": "Raw Json redaktoru (ekspert rejimi)",
+    "rawJsonTooltip": "Birbaşa JSON Redaktə - Diqqət ilə istifadə edin!",
+    "expertModeOnly": "Yalnız ekspert rejimi",
+    "expertModeDescription": "Birbaşa JSON redaktəsi düzgün edilmədiyi təqdirdə sistem funksiyasını poza bilər. Vault sxemini və təsirlərini başa düşsəniz, yalnız dəyişdirin.",
+    "fields.CLUSTER.description": "Ceph paylanmış saxlama klaster parametrlərini konfiqurasiya edin",
+    "fields.POOL.description": "Ceph Storage Hovuz Parametrlərini konfiqurasiya edin",
+    "fields.IMAGE.description": "RBD görüntü parametrlərini konfiqurasiya edin",
+    "fields.SNAPSHOT.description": "RBD Snapshot Parametrlərini konfiqurasiya edin",
+    "fields.CLONE.description": "RBD klon parametrlərini konfiqurasiya edin",
+    "jsonError": "Jon",
+    "formatJson": "Format JSON",
+    "resetToFormValues": "Dəyərləri yaratmaq üçün yenidən qurun",
+    "isRequired": "{{sahə}} tələb olunur",
+    "invalidFormat": "Yanlış format. {{Təsvir}}",
+    "minLength": "Minimum uzunluq {{uzunluq}}",
+    "maxLength": "Maksimum uzunluq {{uzunluq}}",
+    "minValue": "Minimum dəyər {{dəyər}}",
+    "maxValue": "Maksimum dəyər {{dəyər}}",
+    "mustBeValidJson": "Etibarlı JSON olmalıdır",
+    "mustBeArray": "Bir sıra olmalıdır",
+    "mustBeValidJsonArray": "Etibarlı JSON Array olmalıdır",
+    "enterJsonObject": "JSON obyektini daxil edin",
+    "enterJsonArray": "JSON serialı daxil edin",
+    "portPlaceholder": "Port nömrəsi (1-65535)",
+    "example": "Misal:",
+    "advanced": "Qabaqcıl",
+    "failedToSerialize": "JSON-a məlumatları seriallaşdırmaq olmadı",
+    "invalidJsonFormat": "Yanlış JSON Formatı",
+    "failedToParseJson": "JSONu təhlil etmək alınmadı:",
+    "fieldsMovedToExtra": "{{say}} sahə (lər) ekstrafelilərə köçürüldü: {{sahələr}}",
+    "fieldsMovedFromExtra": "{{}}} ekstrafelilərdən bərpa olunan sahə (lər) {{sahələr}}",
+    "sshPasswordRequiredWhenNoKey": "İlkin açar quraşdırma üçün ssh parol tələb olunur",
+    "providerFields": "{{provayder}} konfiqurasiya",
+    "providerRequiredFields": "{{Provayder}} üçün tələb olunan sahələr",
+    "testConnection": {
+      "button": "Test bağlantısı",
+      "missingFields": "Zəhmət olmasa sınamaqdan əvvəl IP ünvanı, istifadəçi adı və şifrənizi doldurun",
+      "initiated": "SSH Bağlantı Testi başlandı. Xahiş edirəm nəticələr üçün növbəni yoxlayın.",
+      "success": "Ssh bağlantısı uğurlu",
+      "failed": "Ssh bağlantısı uğursuz oldu",
+      "testing": "Test bağlantısı ..."
+    },
+    "systemCompatibility": {
+      "title": "Sistem uyğunluğu",
+      "systemInfo": "Sistem haqqında məlumat",
+      "kernelVersion": "Kernel versiyası",
+      "operatingSystem": "Əməliyyat sistemi",
+      "btrfsAvailable": "BTRFS mövcuddur",
+      "compatibilityStatus": "Uyğunluq Vəziyyəti",
+      "compatible": "Uyğun",
+      "warning": "Xəbərdarlıq",
+      "incompatible": "Uyğunsuz",
+      "unknown": "Naməlum",
+      "knownIssues": "Məlum məsələlər",
+      "recommendations": "Tövsiyələr",
+      "yes": "Bəli",
+      "no": "Yox"
+    },
+    "fields": {
+      "MACHINE": {
+        "description": "SSH girişi və saxlama üçün maşın konfiqurasiyası",
+        "ip": {
+          "label": "IP ünvanı",
+          "description": "Maşının IP ünvanı"
+        },
+        "user": {
+          "label": "İstifadəçi adı",
+          "description": "Bağlantı üçün SSH istifadəçi adı"
+        },
+        "datastore": {
+          "label": "Datastore yolu",
+          "description": "Məlumatların saxlanması üçün qovluq yolu. Bir BTRFS fayl sistemində yerləşirsinizsə, yerli xüsusiyyətlərdən istifadə edəcəkdir. Əks təqdirdə, bir BTRFS saxlama hovuzu faylı yaradılacaq və görüntüləri və sıxılmanı təmin etmək üçün burada quraşdırılacaq və quraşdırılacaqdır"
+        },
+        "port": {
+          "label": "Ssh port",
+          "description": "Ssh port nömrəsi"
+        },
+        "host_entry": {
+          "label": "Host giriş",
+          "description": "SSH Tanınmış Host Girişi Təhlükəsizlik Doğrulama üçün Giriş"
+        },
+        "ssh_key_configured": {
+          "label": "SSH açarı artıq konfiqurasiya edilmişdir",
+          "description": "SSH ictimai açarı artıq hədəf maşında quraşdırılıbsa, bunu yoxlayın"
+        },
+        "ssh_password": {
+          "label": "Ssh parol (müvəqqəti)",
+          "description": "Yalnız ilkin ssh açar quraşdırma üçün müvəqqəti parol. SSH açarı artıq konfiqurasiya olunarsa boş buraxın. Bu şifrə ictimai açarı kopyalamaq üçün bir dəfə istifadə olunur və sonra təhlükəsizlik üçün aradan qaldırılmalıdır."
+        }
+      },
+      "REPOSITORY": {
+        "description": "Yedekləmə anbarı üçün anbar konfiqurasiyası",
+        "name": {
+          "label": "Depo adı",
+          "description": "Depozitoriya adı identifikatoru"
+        },
+        "credential": {
+          "label": "Şifrə daxil olun",
+          "description": "Depozitariya giriş şifrəsi (32 simvol, alfasayısal + xüsusi şars)"
+        },
+        "encryption": {
+          "label": "Şifrələməni aktivləşdirin",
+          "description": "Anbar üçün şifrələməni aktivləşdirin"
+        },
+        "retention": {
+          "label": "Tutma siyasəti",
+          "description": "Tutma siyasəti parametrləri"
+        },
+        "schedule": {
+          "label": "Yedəkləmə cədvəli",
+          "description": "Avtomatlaşdırılmış ehtiyat nüsxələri üçün Cron ifadəsi"
+        }
+      },
+      "STORAGE": {
+        "entityDescription": "Yedekləmə istiqamətləri üçün saxlama konfiqurasiyası",
+        "name": {
+          "label": "Saxlama adı",
+          "description": "Bu saxlama konfiqurasiyası üçün unikal ad"
+        },
+        "provider": {
+          "label": "Saxlama təminatçısı",
+          "description": "Saxlama Təchizatçısını seçin"
+        },
+        "description": {
+          "label": "Təsvir",
+          "description": "Bu saxlama konfiqurasiyasının isteğe bağlı təsviri"
+        },
+        "noVersioning": {
+          "label": "Versioning deaktiv edin",
+          "description": "Bu saxlama üçün versiya nəzarətini deaktiv edin"
+        },
+        "parameters": {
+          "label": "Əlavə parametrlər",
+          "description": "Qabaqcıl konfiqurasiya üçün əlavə rclone parametrləri"
+        }
+      },
+      "SCHEDULE": {
+        "description": "Avtomatik tapşırıqlar üçün konfiqurasiya cədvəli",
+        "cron": {
+          "label": "Cron ifadəsi",
+          "description": "CRON-ı təyin edən Cron ifadəsi"
+        },
+        "timezone": {
+          "label": "Səkşanı",
+          "description": "Cədvəl icrası üçün vaxt qurşağı"
+        },
+        "enabled": {
+          "label": "Cədvəl aktivləşdirin",
+          "description": "Bu cədvəlin aktiv olub-olmaması"
+        }
+      },
+      "BRIDGE": {
+        "description": "Şəbəkə bağlantısı üçün körpü konfiqurasiyası",
+        "ip": {
+          "label": "IP ünvanı",
+          "description": "Körpü serverinin IP ünvanı"
+        }
+      },
+      "REGION": {
+        "description": "Coğrafi paylama üçün bölgə konfiqurasiyası",
+        "name": {
+          "label": "Bölgə adı",
+          "description": "Coğrafi bölgənin adı"
+        },
+        "code": {
+          "label": "Rayon kodu",
+          "description": "Bölgə üçün qısa kod"
+        }
+      },
+      "TEAM": {
+        "description": "Təşkilati quruluş üçün komanda konfiqurasiyası",
+        "name": {
+          "label": "Komanda adı",
+          "description": "Komandanın adı"
+        },
+        "teamDescription": {
+          "label": "Komanda şərhi",
+          "description": "Komandanın məqsədi və vəzifələri təsviri"
+        },
+        "SSH_PRIVATE_KEY": {
+          "label": "Ssh özəl açar",
+          "description": "Komanda əməliyyatları üçün Base64-kodlanmış SSH Şəxsi açarı"
+        },
+        "SSH_PUBLIC_KEY": {
+          "label": "Ssh ictimai açar",
+          "description": "Komanda əməliyyatları üçün SSH ictimai açarı"
+        }
+      },
+      "USER": {
+        "description": "Şəxsi parametrlər üçün istifadəçi konfiqurasiyası",
+        "SSH_PRIVATE_KEY": {
+          "label": "Ssh özəl açar",
+          "description": "İstifadəçi əməliyyatları üçün baza64 kodlanmış SSH Şəxsi açarı"
+        },
+        "SSH_PUBLIC_KEY": {
+          "label": "Ssh ictimai açar",
+          "description": "İstifadəçi əməliyyatları üçün ssh ictimai açar"
+        }
+      },
+      "COMPANY": {
+        "description": "Təşkilat-Geniş Parametrlər üçün şirkət konfiqurasiyası",
+        "UNIVERSAL_USER_ID": {
+          "label": "Universal istifadəçi identifikatoru",
+          "description": "Sistem əməliyyatları üçün universal istifadəçi identifikatoru"
+        },
+        "UNIVERSAL_USER_NAME": {
+          "label": "Universal istifadəçi adı",
+          "description": "Sistem əməliyyatları üçün universal istifadəçi adı"
+        },
+        "DOCKER_JSON_CONF": {
+          "label": "Docker konfiqurasiyası",
+          "description": "Docker Qeydiyyatı Doğrulama Konfiqurasiyası"
+        },
+        "SSH_PRIVATE_KEY": {
+          "label": "Ssh özəl açar",
+          "description": "Şirkət Əməliyyatları üçün Base64-kodlanmış SSH Şəxsi açarı"
+        },
+        "SSH_PUBLIC_KEY": {
+          "label": "Ssh ictimai açar",
+          "description": "Şirkət əməliyyatları üçün ssh ictimai açar"
+        },
+        "LOG_FILE": {
+          "label": "Giriş faylı yolu",
+          "description": "Sistem Giriş Faylına Yol"
+        },
+        "PLUGINS": {
+          "label": "Plaginlər",
+          "description": "Konteyner şəkilləri və aktivləşdirmə vəziyyəti olan plugin konfiqurasiyaları"
+        }
+      },
+      "CLUSTER": {
+        "description": "Ceph paylanmış saxlama klaster parametrlərini konfiqurasiya edin",
+        "monitors": {
+          "label": "Qovşaqlara nəzarət edin",
+          "description": "Çoxluqdakı monitor qovşaqlarının siyahısı"
+        },
+        "mgrs": {
+          "label": "Menecer qovşaqları",
+          "description": "Çoxluqdakı menecer qovşaqlarının siyahısı"
+        },
+        "osds": {
+          "label": "OSD qovşaqları",
+          "description": "OSD (obyekt yaddaşı daemon) qovşaqlarının siyahısı"
+        },
+        "mds": {
+          "label": "MDS qovşaqları",
+          "description": "MDS (Metadata Server) qovşaqlarının siyahısı"
+        },
+        "fsid": {
+          "label": "FileSystem ID",
+          "description": "Ceph Klaster (UUID formatı) üçün unikal identifikator"
+        },
+        "config": {
+          "label": "Konfiqurasiya",
+          "description": "Əlavə Klaster Konfiqurasiya Seçimləri"
+        }
+      },
+      "POOL": {
+        "description": "Ceph Storage Hovuz Parametrlərini konfiqurasiya edin",
+        "pg_num": {
+          "label": "Yerləşdirmə qrupları",
+          "description": "Hovuz üçün yerləşdirmə qruplarının sayı"
+        },
+        "pgp_num": {
+          "label": "PGP nömrəsi",
+          "description": "Yerləşdirmə məqsədləri üçün yerləşdirmə qruplarının sayı"
+        },
+        "size": {
+          "label": "Replikasiya ölçüsü",
+          "description": "Hovuzdakı obyektlər üçün replikaların sayı"
+        },
+        "min_size": {
+          "label": "Minimum ölçü",
+          "description": "I / O üçün tələb olunan minimum replikaların sayı"
+        },
+        "crush_rule": {
+          "label": "Əzmək qayda",
+          "description": "Məlumat yerləşdirmə üçün qayda adı"
+        },
+        "application": {
+          "label": "Tətbiqi",
+          "description": "Hovuz üçün ərizə növü (məsələn, RBD, CEPHFS)"
+        }
+      },
+      "IMAGE": {
+        "description": "RBD görüntü parametrlərini konfiqurasiya edin",
+        "size": {
+          "label": "Şəkil ölçüsü",
+          "description": "RBD görüntüsünün ölçüsü (məs.g., 10g, 1t)"
+        },
+        "features": {
+          "label": "Xüsusiyyət",
+          "description": "Şəkil üçün imkan verən RBD xüsusiyyətləri"
+        },
+        "object_size": {
+          "label": "Obyekt ölçüsü",
+          "description": "Təsvir daxilindəki obyektlərin ölçüsü"
+        },
+        "stripe_unit": {
+          "label": "Zolaqlı vahidi",
+          "description": "Şəkil üçün zolaq vahid ölçüsü"
+        },
+        "stripe_count": {
+          "label": "Zolaq sayı",
+          "description": "Şəkil üçün zolaqların sayı"
+        },
+        "data_pool": {
+          "label": "Data hovuzu",
+          "description": "Şəkil məlumatlarını saxlamaq üçün ayrıca hovuz"
+        }
+      },
+      "SNAPSHOT": {
+        "description": "RBD Snapshot Parametrlərini konfiqurasiya edin",
+        "protected": {
+          "label": "Qorunan",
+          "description": "Snapshot silinmədən qorunur"
+        },
+        "timestamp": {
+          "label": "Taxtamaşma",
+          "description": "Snapshotun timestampı"
+        },
+        "size": {
+          "label": "Snapshot ölçüsü",
+          "description": "Snapshotun ölçüsü"
+        }
+      },
+      "CLONE": {
+        "description": "RBD klon parametrlərini konfiqurasiya edin",
+        "parent_pool": {
+          "label": "Valideyn hovuzu",
+          "description": "Valideyn şəkli olan hovuz"
+        },
+        "parent_image": {
+          "label": "Valideyn görüntüsü",
+          "description": "Valideyn görüntüsünün adı"
+        },
+        "parent_snapshot": {
+          "label": "Valideyn anı",
+          "description": "Valideynin adı anı"
+        },
+        "features": {
+          "label": "Xüsusiyyət",
+          "description": "Klon üçün RBD xüsusiyyətləri"
+        },
+        "size": {
+          "label": "Klon ölçüsü",
+          "description": "Klon görüntüsünün ölçüsü"
+        }
+      }
+    }
+  },
+  "fieldGenerator": {
+    "title": {
+      "ssh_keys": "SSH düyməsi cütü yaradın",
+      "repository_credential": "Depozitoriya etimadnaməsini yaradın"
+    },
+    "tooltip": "Dəyəri yaratmaq",
+    "generate": "Yaratmaq",
+    "regenerate": "Bərpa etmək",
+    "apply": "Tətbiq etmək",
+    "cancel": "Ləğv etmək",
+    "copy": "Surətini çıxarmaq",
+    "copied": "Kopyalandı!",
+    "keyType": "Açar növü",
+    "keySize": "Əsas ölçüsü",
+    "moreSecure": "Daha etibarlı",
+    "comingSoon": "Tezliklə",
+    "generationSuccess": "Uğurlu",
+    "generationError": "Yarada bilmədi. Xahiş edirəm yenidən cəhd edin.",
+    "applied": "Tətbiq olunan dəyərlər uğurla tətbiq olunur",
+    "copyError": "Panoya kopyalana bilmədi"
+  },
+  "notifications": {
+    "title": "Bildirişlər",
+    "empty": "Bildiriş yoxdur",
+    "markAllRead": "Hamısını oxunduğu kimi qeyd edin",
+    "clearAll": "Hamısını təmizləmək"
+  },
+  "warnings": {
+    "sandboxEnvironment": "Qum qutusu mühiti",
+    "sandboxMessage": "Yeniləmələr zamanı məlumatlar yenidən qurula bilər. Yalnız sınaq üçün."
+  },
+  "nestedObjectEditor": {
+    "Image": "Şəkil",
+    "Active": "Fəal",
+    "Add": "Əlavə etmək",
+    "Delete this entry?": "Bu girişi silmək?",
+    "Yes": "Bəli",
+    "No": "Yox",
+    "Object": "Obyekt",
+    "Array": "Serial",
+    "True": "Doğru",
+    "False": "Yalan",
+    "Enter key name": "Açar adını daxil edin",
+    "Show JSON": "Şousu göstərmək",
+    "Hide JSON": "Jon gizlətmək",
+    "No entries": "Giriş yoxdur",
+    "Raw JSON Editor": "Xam json redaktoru",
+    "JSON Error": "Jon",
+    "Uniform Structure": "Vahid quruluş",
+    "Fields": "Tarlalar",
+    "Container Images Detected": "Konteyner şəkilləri aşkar edildi",
+    "Plugin Configuration Detected": "Plugin konfiqurasiyası aşkarlandı",
+    "Uniform Structure Detected": "Vahid quruluş aşkar edildi"
+  }
+}

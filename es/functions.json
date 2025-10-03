@@ -1,0 +1,411 @@
+{
+  "availableFunctions": "Funciones disponibles",
+  "selectFunction": "Función Seleccionar",
+  "searchFunctions": "Funciones de búsqueda ...",
+  "configure": "Configurar",
+  "selectFunctionToConfigure": "Seleccione una función para configurar",
+  "priority": "Prioridad",
+  "priorityHelp": "Las tareas se procesan primero por prioridad, luego por edad",
+  "priorityHighest": "El más alto",
+  "priorityHigh": "Alta",
+  "priorityAboveNormal": "Por encima de lo normal",
+  "priorityNormal": "Por encima de lo normal",
+  "priorityBelowNormal": "Normal",
+  "priorityLow": "Bajo",
+  "currentPriority": "Actual",
+  "priorityHighestWarning": "Prioridad más alta (1)",
+  "priorityHighestDescription": "Enviar una tarea de más alta prioridad cancelará automáticamente las tareas de prioridad de mayor prioridad existentes que tenga. Use solo para tareas críticas urgentes que necesitan atención inmediata.",
+  "priorityHighWarning": "Alta prioridad (2)",
+  "priorityHighDescription": "Permite múltiples tareas concurrentes de alta prioridad. Use para tareas importantes que necesitan un procesamiento más rápido.",
+  "priorityNormalWarning": "Por encima de la prioridad normal (3)",
+  "priorityNormalDescription": "Más rápido que la velocidad de procesamiento estándar. Use para tareas que necesitan un procesamiento más rápido de lo normal.",
+  "priorityLowWarning": "Prioridad normal (4)",
+  "priorityLowDescription": "Velocidad de procesamiento estándar. Recomendado para la mayoría de las operaciones y tareas diarias.",
+  "priorityLowestWarning": "Prioridad más baja (5)",
+  "priorityLowestDescription": "Velocidad de procesamiento más lenta. Use para operaciones o tareas por lotes sin restricciones de tiempo.",
+  "description": "Descripción (opcional)",
+  "descriptionPlaceholder": "Agregue una descripción personalizada para este elemento de cola",
+  "validationError": "Error de validación",
+  "missingRequiredParams": "Complete todos los parámetros requeridos: {{params}}",
+  "categories": {
+    "machine": {
+      "name": "Funciones de la máquina",
+      "description": "Funciones de configuración y mantenimiento del sistema central"
+    },
+    "repository": {
+      "name": "Funciones de repositorio",
+      "description": "Gestión y operaciones de repositorio"
+    },
+    "backup": {
+      "name": "Funciones de respaldo",
+      "description": "Operaciones de copia de seguridad y restauración"
+    },
+    "network": {
+      "name": "Funciones de red",
+      "description": "Operaciones de mapeo de redes y sockets"
+    },
+    "container": {
+      "name": "Funciones de contenedor",
+      "description": "Operaciones de gestión de contenedores Docker"
+    }
+  },
+  "functions": {
+    "setup": {
+      "name": "configuración",
+      "description": "Configuración del sistema operativo con herramientas y configuraciones requeridas",
+      "params": {
+        "datastore_size": {
+          "label": "Tamaño del almacén de datos",
+          "help": "Tamaño del almacén de datos (por ejemplo, 95%, 100 g)"
+        },
+        "source": {
+          "label": "Fuente",
+          "help": "Fuente del paquete"
+        },
+        "rclone_source": {
+          "label": "Fuente de instalación de RClone",
+          "help": "Cómo instalar rclone (install-script = script oficial, paquete-manager = apt/dnf, manual = skip)"
+        },
+        "docker_source": {
+          "label": "Fuente de instalación de Docker",
+          "help": "Cómo instalar Docker (Docker-Repo = Repository Official, paquetes de paquetes = paquetes OS, snap = snap, manual = omitir)"
+        },
+        "install_amd_driver": {
+          "label": "Instale el controlador de GPU AMD",
+          "help": "Instale los controladores de GPU AMD (auto = detectar GPU primero, true = Always install, false = skip)"
+        },
+        "install_nvidia_driver": {
+          "label": "Instalar controlador de GPU NVIDIA",
+          "help": "Instalar controladores de GPU NVIDIA (auto = detectar GPU primero, true = Always install, false = skip)"
+        }
+      }
+    },
+    "hello": {
+      "name": "Hola",
+      "description": "Función de prueba simple que imprime hello desde hostname"
+    },
+    "uninstall": {
+      "name": "desinstalar",
+      "description": "Limpieza y desinstalación de componentes del sistema"
+    },
+    "new": {
+      "name": "nueva",
+      "description": "Crear un nuevo repositorio",
+      "params": {
+        "repo": {
+          "label": "Repositorio",
+          "help": "Nombre de repositorio"
+        },
+        "size": {
+          "label": "Tamaño",
+          "help": "Tamaño del repositorio (por ejemplo, 10g)"
+        }
+      }
+    },
+    "mount": {
+      "name": "montar",
+      "description": "Montar sistemas de archivos de repositorio",
+      "params": {
+        "repo": {
+          "label": "Repositorio",
+          "help": "Nombre (s) del repositorio, separado por comas"
+        },
+        "from": {
+          "label": "Desde la máquina",
+          "help": "Máquina remota para montar desde"
+        }
+      }
+    },
+    "unmount": {
+      "name": "desmontar",
+      "description": "Desmontaje de sistemas de archivos de repositorio",
+      "params": {
+        "repo": {
+          "label": "Repositorio",
+          "help": "Nombre (s) del repositorio, separado por comas"
+        },
+        "from": {
+          "label": "Desde la máquina",
+          "help": "Máquina remota para desmontar desde"
+        }
+      }
+    },
+    "up": {
+      "name": "arriba",
+      "description": "Iniciar servicios de repositorio utilizando RediacCfile",
+      "params": {
+        "repo": {
+          "label": "Repositorio",
+          "help": "Nombre (s) del repositorio, separado por comas"
+        },
+        "option": {
+          "label": "Opción",
+          "help": "Opciones (por ejemplo, solo preparación)"
+        }
+      }
+    },
+    "down": {
+      "name": "abajo",
+      "description": "Detener los servicios de repositorio",
+      "params": {
+        "repo": {
+          "label": "Repositorio",
+          "help": "Nombre (s) del repositorio, separado por comas"
+        },
+        "option": {
+          "label": "Opción",
+          "help": "Opciones adicionales"
+        }
+      }
+    },
+    "resize": {
+      "name": "cambiar de tamaño",
+      "description": "RESTRACIÓN DEL ALMACENAMIENTO DE REZORIO",
+      "params": {
+        "repo": {
+          "label": "Repositorio",
+          "help": "Nombre de repositorio"
+        },
+        "size": {
+          "label": "Nuevo tamaño",
+          "help": "Nuevo tamaño (por ejemplo, 20 g)"
+        }
+      }
+    },
+    "rm": {
+      "name": "RM",
+      "description": "Eliminar repositorio",
+      "params": {
+        "repo": {
+          "label": "Repositorio",
+          "help": "Nombre de repositorio"
+        }
+      }
+    },
+    "plugin": {
+      "name": "complemento",
+      "description": "Activar complementos de repositorio",
+      "params": {
+        "repo": {
+          "label": "Repositorio",
+          "help": "Nombre (s) del repositorio, separado por comas"
+        },
+        "plugin": {
+          "label": "Complemento",
+          "help": "Nombre (s) de complemento, separado por comas"
+        }
+      }
+    },
+    "plugout": {
+      "name": "enchufe",
+      "description": "Desactivar complementos de repositorio",
+      "params": {
+        "repo": {
+          "label": "Repositorio",
+          "help": "Nombre (s) del repositorio, separado por comas"
+        },
+        "plugin": {
+          "label": "Complemento",
+          "help": "Nombre (s) de complemento, separado por comas"
+        }
+      }
+    },
+    "ownership": {
+      "name": "propiedad",
+      "description": "Cambiar la propiedad del repositorio",
+      "params": {
+        "repo": {
+          "label": "Repositorio",
+          "help": "Nombre de repositorio"
+        },
+        "from": {
+          "label": "Propietario actual",
+          "help": "Propietario actual"
+        },
+        "to": {
+          "label": "Nuevo propietario",
+          "help": "Nuevo propietario (predeterminado: usuario universal)"
+        }
+      }
+    },
+    "list": {
+      "name": "Enumere archivos remotos",
+      "description": "Lista de archivos en ubicaciones de almacenamiento remoto",
+      "params": {
+        "from": {
+          "label": "Ubicación de origen",
+          "help": "Máquina o sistema de almacenamiento para enumerar archivos de"
+        },
+        "path": {
+          "label": "Camino",
+          "help": "Ruta opcional dentro del almacenamiento"
+        },
+        "format": {
+          "label": "Formato de salida",
+          "help": "Formatear para la lista de archivos"
+        }
+      }
+    },
+    "push": {
+      "name": "empujar",
+      "description": "Push Repositorio al almacenamiento remoto",
+      "params": {
+        "repo": {
+          "label": "Repositorio",
+          "help": "Nombre (s) del repositorio, separado por comas"
+        },
+        "dest": {
+          "label": "Nombre de archivo de destino",
+          "help": "Nombre para el archivo de copia de seguridad"
+        },
+        "destinationType": {
+          "label": "Tipo de destino",
+          "help": "Seleccione si debe presionar a una máquina o almacenamiento"
+        },
+        "to": {
+          "label": "Destino",
+          "help": "Seleccione la máquina de destino o el almacenamiento"
+        },
+        "state": {
+          "label": "Estado requerido",
+          "help": "Validar el repositorio está en línea o fuera de línea antes de presionar"
+        },
+        "option": {
+          "label": "Opción",
+          "help": "Opciones (por ejemplo, anular)"
+        }
+      }
+    },
+    "pull": {
+      "name": "Jalar",
+      "description": "Tire del repositorio del almacenamiento remoto",
+      "params": {
+        "sourceType": {
+          "label": "Tipo de fuente",
+          "help": "Seleccione si debe extraer de una máquina o almacenamiento"
+        },
+        "from": {
+          "label": "Fuente",
+          "help": "Seleccione la máquina fuente o el almacenamiento"
+        },
+        "repo": {
+          "label": "Repositorio",
+          "help": "Nombre (s) del repositorio, separado por comas"
+        }
+      }
+    },
+    "ping": {
+      "name": "silbido",
+      "description": "Pruebe la conectividad de red a la máquina"
+    },
+    "container_start": {
+      "name": "contenedor_start",
+      "description": "Iniciar un contenedor Docker",
+      "params": {
+        "container": {
+          "label": "Recipiente",
+          "help": "Nombre o identificación del contenedor"
+        }
+      }
+    },
+    "container_stop": {
+      "name": "contenedor_stop",
+      "description": "Detenga un contenedor Docker en ejecución",
+      "params": {
+        "container": {
+          "label": "Recipiente",
+          "help": "Nombre o identificación del contenedor"
+        }
+      }
+    },
+    "container_restart": {
+      "name": "contenedor_restart",
+      "description": "Reiniciar un contenedor Docker",
+      "params": {
+        "container": {
+          "label": "Recipiente",
+          "help": "Nombre o identificación del contenedor"
+        }
+      }
+    },
+    "container_remove": {
+      "name": "contenedor_remove",
+      "description": "Retire un contenedor Docker",
+      "params": {
+        "container": {
+          "label": "Recipiente",
+          "help": "Nombre o identificación del contenedor"
+        },
+        "force": {
+          "label": "Fuerza eliminar",
+          "help": "La eliminación de la fuerza del contenedor en ejecución"
+        }
+      }
+    },
+    "container_logs": {
+      "name": "contenedor_logs",
+      "description": "Ver registros de contenedores Docker",
+      "params": {
+        "container": {
+          "label": "Recipiente",
+          "help": "Nombre o identificación del contenedor"
+        },
+        "lines": {
+          "label": "Pauta",
+          "help": "Número de líneas para mostrar (predeterminada: 100)"
+        },
+        "follow": {
+          "label": "Sigue los registros",
+          "help": "Siga la salida del registro en tiempo real"
+        }
+      }
+    },
+    "container_inspect": {
+      "name": "contenedor_inspect",
+      "description": "Inspeccionar los detalles del contenedor de Docker",
+      "params": {
+        "container": {
+          "label": "Recipiente",
+          "help": "Nombre o identificación del contenedor"
+        }
+      }
+    },
+    "container_stats": {
+      "name": "contenedor_stats",
+      "description": "Mostrar estadísticas de uso de recursos de contenedores Docker",
+      "params": {
+        "container": {
+          "label": "Recipiente",
+          "help": "Nombre o identificación del contenedor (opcional - muestra todo si está vacío)"
+        }
+      }
+    },
+    "container_pause": {
+      "name": "contenedor_pause",
+      "description": "Pausa un contenedor Docker en ejecución",
+      "params": {
+        "container": {
+          "label": "Recipiente",
+          "help": "Nombre o identificación del contenedor"
+        }
+      }
+    },
+    "container_unpause": {
+      "name": "contenedor_unpause",
+      "description": "Impause un contenedor de acopolador",
+      "params": {
+        "container": {
+          "label": "Recipiente",
+          "help": "Nombre o identificación del contenedor"
+        }
+      }
+    }
+  },
+  "checkboxOptions": {
+    "mountRepositoryFirst": "Repositorio de montaje primero",
+    "preparationOnly": "Solo preparación",
+    "unmountAfterStopping": "Desmontar después de detenerse",
+    "overrideExistingFile": "Anular el archivo existente"
+  },
+  "additionalOptions": "Opciones adicionales (avanzado)"
+}

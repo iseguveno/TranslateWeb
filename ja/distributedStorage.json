@@ -1,0 +1,159 @@
+{
+  "title": "分散ストレージ",
+  "description": "分散ストレージクラスター、プール、画像、スナップショットを管理します",
+  "clusters": {
+    "title": "クラスター",
+    "name": "クラスター名",
+    "createCluster": "クラスターを作成します",
+    "editCluster": "クラスターを編集します",
+    "deleteCluster": "クラスターを削除します",
+    "clusterDetails": "クラスターの詳細",
+    "fsid": "ble",
+    "secretKey": "秘密の鍵",
+    "monitorHosts": "ホストを監視します",
+    "configureVault": "Vaultを構成します",
+    "assignMachines": "マシンを割り当てます",
+    "manageMachines": "マシンを管理します",
+    "availableMachines": "利用可能なマシン",
+    "assignedMachines": "割り当てられたマシン",
+    "removeFromCluster": "クラスターから取り外します",
+    "noMachinesAssigned": "このクラスターに割り当てられたマシンはありません"
+  },
+  "pools": {
+    "title": "プール",
+    "name": "プール名",
+    "create": "プールを作成します",
+    "noPools": "プールは見つかりません",
+    "createPool": "プールを作成します",
+    "editPool": "プールを編集します",
+    "deletePool": "プールを削除します",
+    "poolDetails": "プールの詳細",
+    "poolId": "プールID",
+    "size": "サイズ",
+    "minSize": "最小サイズ",
+    "pgNum": "PG番号",
+    "pgpNum": "PGP番号",
+    "crush": "ルールをクラッシュします",
+    "configureVault": "Vaultを構成します"
+  },
+  "images": {
+    "title": "画像",
+    "name": "画像名",
+    "assignedMachine": "割り当てられたマシン",
+    "reassignMachine": "マシンを再割り当てします",
+    "reassignmentSuccess": "画像マシンの割り当ては正常に更新されました",
+    "reassignmentModal": {
+      "title": "画像をマシンに再割り当てします",
+      "currentAssignment": "現在の割り当て",
+      "selectNewMachine": "新しいマシンを選択します",
+      "noMachineAssigned": "現在割り当てられているマシンはありません",
+      "warning": "警告：画像を別のマシンに再割り当てすると、データが移行するまで現在のマシンで使用できなくなります。"
+    }
+  },
+  "snapshots": {
+    "title": "スナップショット"
+  },
+  "clones": {
+    "title": "クローン",
+    "assignMachines": "マシンを割り当てます",
+    "assignedMachines": "割り当てられたマシン",
+    "machineManager": "マシンマネージャー",
+    "addMachine": "マシンを追加します",
+    "removeMachine": "マシンを取り外します",
+    "removeSelectedMachines": "選択したマシンを削除します",
+    "exportMachines": "輸出機",
+    "searchMachines": "検索マシン...",
+    "statistics": "統計",
+    "totalMachines": "合計マシン",
+    "noMachinesAssigned": "このクローンに割り当てられたマシンはありません"
+  },
+  "assignment": {
+    "status": "割り当てステータス",
+    "available": "利用可能",
+    "assignedToCluster": "クラスターに割り当てられます",
+    "assignedToImage": "画像に割り当てられます",
+    "assignedToClone": "クローンに割り当てられます",
+    "viewStatus": "割り当てステータスを表示します",
+    "history": "割り当て履歴",
+    "currentAssignment": "現在の割り当て",
+    "none": "なし",
+    "assignedTo": "{{type}}に割り当てられます：{{name}}",
+    "actions": {
+      "assignToCluster": "クラスターに割り当てられます",
+      "removedFromCluster": "クラスターから削除されます",
+      "assignedToImage": "画像に割り当てられます",
+      "reassignedImage": "再割り当て画像",
+      "assignedToClone": "クローンに割り当てられます",
+      "removedFromClone": "クローンから削除されました"
+    }
+  },
+  "warnings": {
+    "exclusivity": "マシンは、一度に1つのリソース（クラスター、画像、またはクローン）にのみ割り当てることができます。",
+    "exclusivityCluster": "このマシンは現在、クラスターに割り当てられています。 他の場所に割り当てる前に、クラスターから削除する必要があります。",
+    "exclusivityImage": "このマシンは現在画像に割り当てられています。 このマシンを他の場所で使用する前に、画像を再割り当てする必要があります。",
+    "exclusivityClone": "このマシンは現在、クローンに割り当てられています。 他の場所に割り当てる前に、クローンから削除する必要があります。",
+    "dataLoss": "警告：マシンを取り外すと、適切に移行されないとデータ損失が発生する場合があります。",
+    "reassignment": "リソースを再配置するには、サービスの混乱を避けるために慎重に計画する必要があります。"
+  },
+  "machineSection": {
+    "title": "分散ストレージ",
+    "notAssigned": "分散ストレージリソースに割り当てられていません",
+    "viewDetails": "詳細を表示します",
+    "manageAssignment": "割り当てを管理します"
+  },
+  "tabs": {
+    "clusters": "クラスター",
+    "pools": "プール",
+    "machines": "機械"
+  },
+  "machines": {
+    "summary": {
+      "title": "機械の可用性",
+      "total": "合計マシン",
+      "available": "利用可能",
+      "assignedToClusters": "クラスターに割り当てられます",
+      "assignedToImages": "画像に割り当てられます",
+      "assignedToClones": "クローンに割り当てられます"
+    },
+    "filters": {
+      "assignmentStatus": "割り当てステータス",
+      "allStatuses": "すべてのステータス",
+      "searchPlaceholder": "検索マシン..."
+    },
+    "actions": {
+      "viewDetails": "詳細を表示します",
+      "removeAssignment": "割り当てを削除します",
+      "exportReport": "エクスポートレポート"
+    }
+  },
+  "common": {
+    "loading": "読み込み...",
+    "error": "エラー",
+    "success": "成功",
+    "confirm": "確認する",
+    "cancel": "キャンセル",
+    "save": "保存",
+    "delete": "消去",
+    "edit": "編集",
+    "close": "近い",
+    "refresh": "リフレッシュします",
+    "actions": "アクション",
+    "details": "詳細"
+  },
+  "dashboard": {
+    "title": "分散型ストレージマシン",
+    "subtitle": "{{合計}}すべてのチームの合計マシン",
+    "clusterSummary": "クラスターの概要",
+    "totalClusters": "合計クラスター",
+    "avgMachinesPerCluster": "AVGマシン/クラスター",
+    "machineUtilization": "マシン利用",
+    "utilizationDetails": "{{使用}}の{{Total}}使用されているマシン",
+    "teamBreakdown": "チームマシンの配布"
+  },
+  "assignmentStatus": {
+    "available": "利用可能",
+    "cluster": "クラスタ",
+    "image": "画像",
+    "clone": "クローン"
+  }
+}

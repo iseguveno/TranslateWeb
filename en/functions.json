@@ -1,0 +1,425 @@
+{
+  "availableFunctions": "Available Functions",
+  "selectFunction": "Select Function",
+  "searchFunctions": "Search functions...",
+  "configure": "Configure",
+  "selectFunctionToConfigure": "Select a function to configure",
+  "priority": "Priority",
+  "priorityHelp": "Tasks are processed by priority first, then by age",
+  "priorityHighest": "Highest",
+  "priorityHigh": "High",
+  "priorityAboveNormal": "Above Normal",
+  "priorityNormal": "Above Normal",
+  "priorityBelowNormal": "Normal",
+  "priorityLow": "Low",
+  "currentPriority": "Current",
+  "priorityHighestWarning": "Highest Priority (1)",
+  "priorityHighestDescription": "Submitting a highest priority task will automatically cancel any existing highest priority tasks you have. Use only for urgent critical tasks that need immediate attention.",
+  "priorityHighWarning": "High Priority (2)",
+  "priorityHighDescription": "Allows multiple concurrent high priority tasks. Use for important tasks that need faster processing.",
+  "priorityNormalWarning": "Above Normal Priority (3)",
+  "priorityNormalDescription": "Faster than standard processing speed. Use for tasks that need quicker processing than normal.",
+  "priorityLowWarning": "Normal Priority (4)",
+  "priorityLowDescription": "Standard processing speed. Recommended for most operations and day-to-day tasks.",
+  "priorityLowestWarning": "Lowest Priority (5)",
+  "priorityLowestDescription": "Slowest processing speed. Use for batch operations or tasks with no time constraints.",
+  "description": "Description (optional)",
+  "descriptionPlaceholder": "Add a custom description for this queue item",
+  "validationError": "Validation Error",
+  "missingRequiredParams": "Please fill in all required parameters: {{params}}",
+  "categories": {
+    "machine": {
+      "name": "Machine Functions",
+      "description": "Core system setup and maintenance functions"
+    },
+    "repository": {
+      "name": "Repository Functions",
+      "description": "Repository management and operations"
+    },
+    "backup": {
+      "name": "Backup Functions",
+      "description": "Backup and restore operations"
+    },
+    "network": {
+      "name": "Network Functions",
+      "description": "Network and socket mapping operations"
+    },
+    "container": {
+      "name": "Container Functions",
+      "description": "Docker container management operations"
+    }
+  },
+  "functions": {
+    "setup": {
+      "name": "setup",
+      "description": "Setup operating system with required tools and configurations",
+      "params": {
+        "datastore_size": {
+          "label": "Datastore Size",
+          "help": "Datastore size (e.g., 95%, 100G)"
+        },
+        "source": {
+          "label": "Source",
+          "help": "Package source"
+        },
+        "rclone_source": {
+          "label": "Rclone Installation Source",
+          "help": "How to install rclone (install-script = official script, package-manager = apt/dnf, manual = skip)"
+        },
+        "docker_source": {
+          "label": "Docker Installation Source",
+          "help": "How to install Docker (docker-repo = official repository, package-manager = OS packages, snap = snap store, manual = skip)"
+        },
+        "install_amd_driver": {
+          "label": "Install AMD GPU Driver",
+          "help": "Install AMD GPU drivers (auto = detect GPU first, true = always install, false = skip)"
+        },
+        "install_nvidia_driver": {
+          "label": "Install NVIDIA GPU Driver",
+          "help": "Install NVIDIA GPU drivers (auto = detect GPU first, true = always install, false = skip)"
+        }
+      }
+    },
+    "hello": {
+      "name": "hello",
+      "description": "Simple test function that prints hello from hostname"
+    },
+    "uninstall": {
+      "name": "uninstall",
+      "description": "Cleanup and uninstall system components"
+    },
+    "new": {
+      "name": "new",
+      "description": "Create a new repository",
+      "params": {
+        "repo": {
+          "label": "Repository",
+          "help": "Repository name"
+        },
+        "size": {
+          "label": "Size",
+          "help": "Repository size (e.g., 10G)"
+        }
+      }
+    },
+    "mount": {
+      "name": "mount",
+      "description": "Mount repository filesystems",
+      "params": {
+        "repo": {
+          "label": "Repository",
+          "help": "Repository name(s), comma-separated"
+        },
+        "from": {
+          "label": "From Machine",
+          "help": "Remote machine to mount from"
+        }
+      }
+    },
+    "unmount": {
+      "name": "unmount",
+      "description": "Unmount repository filesystems",
+      "params": {
+        "repo": {
+          "label": "Repository",
+          "help": "Repository name(s), comma-separated"
+        },
+        "from": {
+          "label": "From Machine",
+          "help": "Remote machine to unmount from"
+        }
+      }
+    },
+    "up": {
+      "name": "up",
+      "description": "Start repository services using Rediaccfile",
+      "params": {
+        "repo": {
+          "label": "Repository",
+          "help": "Repository name(s), comma-separated"
+        },
+        "option": {
+          "label": "Options",
+          "help": "Options (e.g., prep-only)"
+        }
+      }
+    },
+    "down": {
+      "name": "down",
+      "description": "Stop repository services",
+      "params": {
+        "repo": {
+          "label": "Repository",
+          "help": "Repository name(s), comma-separated"
+        },
+        "option": {
+          "label": "Options",
+          "help": "Additional options"
+        }
+      }
+    },
+    "resize": {
+      "name": "resize",
+      "description": "Resize repository storage",
+      "params": {
+        "repo": {
+          "label": "Repository",
+          "help": "Repository name"
+        },
+        "size": {
+          "label": "New Size",
+          "help": "New size (e.g., 20G)"
+        }
+      }
+    },
+    "rm": {
+      "name": "rm",
+      "description": "Delete repository",
+      "params": {
+        "repo": {
+          "label": "Repository",
+          "help": "Repository name"
+        }
+      }
+    },
+    "plugin": {
+      "name": "plugin",
+      "description": "Activate repository plugins",
+      "params": {
+        "repo": {
+          "label": "Repository",
+          "help": "Repository name(s), comma-separated"
+        },
+        "plugin": {
+          "label": "Plugin",
+          "help": "Plugin name(s), comma-separated"
+        }
+      }
+    },
+    "plugout": {
+      "name": "plugout",
+      "description": "Deactivate repository plugins",
+      "params": {
+        "repo": {
+          "label": "Repository",
+          "help": "Repository name(s), comma-separated"
+        },
+        "plugin": {
+          "label": "Plugin",
+          "help": "Plugin name(s), comma-separated"
+        }
+      }
+    },
+    "ownership": {
+      "name": "ownership",
+      "description": "Change repository ownership",
+      "params": {
+        "repo": {
+          "label": "Repository",
+          "help": "Repository name"
+        },
+        "from": {
+          "label": "Current Owner",
+          "help": "Current owner"
+        },
+        "to": {
+          "label": "New Owner",
+          "help": "New owner (default: universal user)"
+        }
+      }
+    },
+    "list": {
+      "name": "list",
+      "description": "List repositories",
+      "params": {
+        "kind": {
+          "label": "Type",
+          "help": "Type to list"
+        },
+        "format": {
+          "label": "Format",
+          "help": "Output format (json)"
+        }
+      }
+    },
+    "push": {
+      "name": "push",
+      "description": "Push repository to remote storage",
+      "params": {
+        "repo": {
+          "label": "Repository",
+          "help": "Repository name(s), comma-separated"
+        },
+        "dest": {
+          "label": "Destination Filename",
+          "help": "Name for the backup file"
+        },
+        "destinationType": {
+          "label": "Destination Type",
+          "help": "Select whether to push to a machine or storage"
+        },
+        "to": {
+          "label": "Destination",
+          "help": "Select the destination machine or storage"
+        },
+        "state": {
+          "label": "Required State",
+          "help": "Validate repository is online or offline before pushing"
+        },
+        "option": {
+          "label": "Options",
+          "help": "Options (e.g., override)"
+        }
+      }
+    },
+    "pull": {
+      "name": "Pull",
+      "description": "Pull repository from remote storage",
+      "params": {
+        "sourceType": {
+          "label": "Source Type",
+          "help": "Select whether to pull from a machine or storage"
+        },
+        "from": {
+          "label": "Source",
+          "help": "Select the source machine or storage"
+        },
+        "repo": {
+          "label": "Repository",
+          "help": "Repository name(s), comma-separated"
+        }
+      }
+    },
+    "list": {
+      "name": "List Remote Files",
+      "description": "List files in remote storage locations",
+      "params": {
+        "from": {
+          "label": "Source Location",
+          "help": "Machine or storage system to list files from"
+        },
+        "path": {
+          "label": "Path",
+          "help": "Optional path within the storage"
+        },
+        "format": {
+          "label": "Output Format",
+          "help": "Format for the file listing"
+        }
+      }
+    },
+    "ping": {
+      "name": "ping",
+      "description": "Test network connectivity to the machine"
+    },
+    "container_start": {
+      "name": "container_start",
+      "description": "Start a Docker container",
+      "params": {
+        "container": {
+          "label": "Container",
+          "help": "Container name or ID"
+        }
+      }
+    },
+    "container_stop": {
+      "name": "container_stop",
+      "description": "Stop a running Docker container",
+      "params": {
+        "container": {
+          "label": "Container",
+          "help": "Container name or ID"
+        }
+      }
+    },
+    "container_restart": {
+      "name": "container_restart",
+      "description": "Restart a Docker container",
+      "params": {
+        "container": {
+          "label": "Container",
+          "help": "Container name or ID"
+        }
+      }
+    },
+    "container_remove": {
+      "name": "container_remove",
+      "description": "Remove a Docker container",
+      "params": {
+        "container": {
+          "label": "Container",
+          "help": "Container name or ID"
+        },
+        "force": {
+          "label": "Force Remove",
+          "help": "Force removal of running container"
+        }
+      }
+    },
+    "container_logs": {
+      "name": "container_logs",
+      "description": "View Docker container logs",
+      "params": {
+        "container": {
+          "label": "Container",
+          "help": "Container name or ID"
+        },
+        "lines": {
+          "label": "Lines",
+          "help": "Number of lines to show (default: 100)"
+        },
+        "follow": {
+          "label": "Follow Logs",
+          "help": "Follow log output in real-time"
+        }
+      }
+    },
+    "container_inspect": {
+      "name": "container_inspect",
+      "description": "Inspect Docker container details",
+      "params": {
+        "container": {
+          "label": "Container",
+          "help": "Container name or ID"
+        }
+      }
+    },
+    "container_stats": {
+      "name": "container_stats",
+      "description": "Display Docker container resource usage statistics",
+      "params": {
+        "container": {
+          "label": "Container",
+          "help": "Container name or ID (optional - shows all if empty)"
+        }
+      }
+    },
+    "container_pause": {
+      "name": "container_pause",
+      "description": "Pause a running Docker container",
+      "params": {
+        "container": {
+          "label": "Container",
+          "help": "Container name or ID"
+        }
+      }
+    },
+    "container_unpause": {
+      "name": "container_unpause",
+      "description": "Unpause a paused Docker container",
+      "params": {
+        "container": {
+          "label": "Container",
+          "help": "Container name or ID"
+        }
+      }
+    }
+  },
+  "checkboxOptions": {
+    "mountRepositoryFirst": "Mount repository first",
+    "preparationOnly": "Preparation only",
+    "unmountAfterStopping": "Unmount after stopping",
+    "overrideExistingFile": "Override existing file"
+  },
+  "additionalOptions": "Additional options (advanced)"
+}

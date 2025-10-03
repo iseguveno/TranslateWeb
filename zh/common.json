@@ -1,0 +1,545 @@
+{
+  "navigation": {
+    "dashboard": "仪表板",
+    "architecture": "建筑学",
+    "resources": "资源",
+    "distributedStorage": "分布式存储",
+    "marketplace": "市场",
+    "queue": "队列",
+    "system": "系统",
+    "audit": "审计",
+    "logout": "注销",
+    "mainNavigation": "主要导航",
+    "openMobileMenu": "打开移动菜单",
+    "closeMobileMenu": "关闭移动菜单"
+  },
+  "actions": {
+    "edit": "编辑",
+    "delete": "删除",
+    "search": "搜索",
+    "reset": "重置",
+    "cancel": "取消",
+    "create": "创造",
+    "save": "节省",
+    "retry": "重试",
+    "refresh": "刷新",
+    "fullscreen": "全屏",
+    "exitFullscreen": "出口全屏",
+    "addToQueue": "添加到队列",
+    "viewTrace": "查看跟踪",
+    "close": "关闭",
+    "back": "后退",
+    "manage": "管理",
+    "remote": "偏僻的",
+    "advanced": "先进的",
+    "trace": "痕迹",
+    "runFunction": "运行功能",
+    "editVault": "编辑保险库",
+    "createResource": "创建{{{resource}}",
+    "editResource": "编辑{{resource}}",
+    "clearSelection": "清晰的选择",
+    "remove": "消除"
+  },
+  "close": "关闭",
+  "copiedToClipboard": "复制到剪贴板",
+  "copyFailed": "未能复制到剪贴板",
+  "export": "出口",
+  "exportCSV": "出口为CSV",
+  "exportJSON": "出口为JSON",
+  "refresh": "刷新",
+  "today": "今天",
+  "yesterday": "昨天",
+  "last7Days": "最近7天",
+  "last30Days": "最近30天",
+  "thisMonth": "本月",
+  "lastMonth": "上个月",
+  "messages": {
+    "success": "成功",
+    "required": "此字段是必需的",
+    "invalidEmail": "无效的电子邮件地址",
+    "loading": "加载中...",
+    "error": "错误"
+  },
+  "table": {
+    "actions": "动作",
+    "showingRecords": "显示记录{{start}}  -  {{end}}的{{total}}}"
+  },
+  "status": {
+    "label": "地位",
+    "initializing": "初始化...",
+    "waitingForExecution": "等待执行",
+    "processing": "加工",
+    "running": "跑步"
+  },
+  "language": {
+    "select": "选择语言",
+    "en": "英语",
+    "es": "西班牙语",
+    "fr": "法语",
+    "de": "德语",
+    "zh": "中国人",
+    "ja": "日本人",
+    "ar": "阿拉伯",
+    "tr": "土耳其"
+  },
+  "theme": {
+    "light": "光",
+    "dark": "黑暗的"
+  },
+  "uiMode": {
+    "simple": "简单的",
+    "expert": "专家",
+    "switching": "切换到{{mode}}模式..."
+  },
+  "general": {
+    "versionFormat": "v {{version}}",
+    "loading": "加载中...",
+    "showingRecords": "显示记录{{start}}  -  {{end}}的{{total}}}",
+    "defaultsApplied": "应用默认值",
+    "important": "重要的",
+    "cancel": "取消",
+    "vaultVersion": "保险库版"
+  },
+  "total": "全部的",
+  "none": "没有任何",
+  "noMatchingResults": "没有匹配结果",
+  "current": "当前的",
+  "utilized": "利用",
+  "fields": {
+    "vault": "保险库配置"
+  },
+  "yes": "是的",
+  "no": "不",
+  "dashboard": {
+    "availablePlans": "可用计划",
+    "upgradeOptions": "升级选项",
+    "currentPlan": "当前计划",
+    "comparePlansDescription": "比较不同订阅层的功能和定价",
+    "elitePlanDescription": "您正在采用我们的最高层面计划，所有功能已解锁"
+  },
+  "vaultEditor": {
+    "vaultConfiguration": "保险库配置",
+    "vaultVersion": "保险库版：",
+    "versionAutoIncrement": "版本将在保存上自动插入",
+    "importJson": "进口JSON",
+    "exportJson": "出口json",
+    "unsavedChanges": "未保存的更改",
+    "versionWillIncrement": "版本将增加到{{version}}",
+    "saveVaultConfiguration": "保存保险库配置",
+    "validationErrors": "验证错误：",
+    "pleaseFixErrors": "保存之前请修复验证错误",
+    "noChangesToSave": "没有更改以保存",
+    "unknownEntityType": "未知实体类型",
+    "unknownEntityDescription": "Vault定义中未定义实体类型“ {{type}}”。",
+    "requiredFields": "必需的字段",
+    "optionalFields": "可选字段",
+    "extraFields": "额外的字段（不在模式中）",
+    "extraFieldsTooltip": "这些字段是导入但未在模式中定义的",
+    "extraFieldsWarning": "警告",
+    "extraFieldsWarningDescription": "这些字段未在模式中定义，并且将存储在JSON结构中的“额外场”下。",
+    "rawJsonEditor": "RAW JSON编辑（专家模式）",
+    "rawJsonTooltip": "直接JSON编辑 - 谨慎使用！",
+    "expertModeOnly": "仅专家模式",
+    "expertModeDescription": "如果无法正确完成，直接JSON编辑可以破坏系统功能。 仅当您了解保险库模式及其含义时才修改。",
+    "fields.CLUSTER.description": "配置CEPH分布式存储集群设置",
+    "fields.POOL.description": "配置CEPH存储池设置",
+    "fields.IMAGE.description": "配置RBD图像设置",
+    "fields.SNAPSHOT.description": "配置RBD快照设置",
+    "fields.CLONE.description": "配置RBD克隆设置",
+    "jsonError": "JSON错误",
+    "formatJson": "格式JSON",
+    "resetToFormValues": "重置以形成值",
+    "isRequired": "{{field}}是必需的",
+    "invalidFormat": "无效格式。 {{描述}}",
+    "minLength": "最小长度为{{长度}}",
+    "maxLength": "最大长度为{{长度}}",
+    "minValue": "最小值为{{value}}",
+    "maxValue": "最大值为{{value}}",
+    "mustBeValidJson": "必须是有效的JSON",
+    "mustBeArray": "必须是一个数组",
+    "mustBeValidJsonArray": "必须是有效的JSON数组",
+    "enterJsonObject": "输入JSON对象",
+    "enterJsonArray": "输入JSON数组",
+    "portPlaceholder": "端口号（1-65535）",
+    "example": "例子：",
+    "advanced": "先进的",
+    "failedToSerialize": "未能将数据序列化为JSON",
+    "invalidJsonFormat": "无效的JSON格式",
+    "failedToParseJson": "未能解析JSON：",
+    "fieldsMovedToExtra": "{{{count}} field（s）移动到Extrafields：{{fields}}",
+    "fieldsMovedFromExtra": "{{count}} field（s）从extlefields恢复：{{fields}}",
+    "sshPasswordRequiredWhenNoKey": "初始密钥设置需要SSH密码",
+    "providerFields": "{{provider}} configuration",
+    "providerRequiredFields": "{{{提供者}}的必需字段",
+    "testConnection": {
+      "button": "测试连接",
+      "missingFields": "在测试之前，请填写IP地址，用户名和密码",
+      "initiated": "SSH连接测试已启动。 请检查队列以获取结果。",
+      "success": "SSH连接成功",
+      "failed": "SSH连接失败",
+      "testing": "测试连接..."
+    },
+    "systemCompatibility": {
+      "title": "系统兼容性",
+      "systemInfo": "系统信息",
+      "kernelVersion": "内核版本",
+      "operatingSystem": "操作系统",
+      "btrfsAvailable": "BTRFS可用",
+      "compatibilityStatus": "兼容状态",
+      "compatible": "兼容的",
+      "warning": "警告",
+      "incompatible": "不相容",
+      "unknown": "未知",
+      "knownIssues": "已知问题",
+      "recommendations": "建议",
+      "yes": "是的",
+      "no": "不"
+    },
+    "fields": {
+      "MACHINE": {
+        "description": "用于SSH访问和存储的机器配置",
+        "ip": {
+          "label": "IP地址",
+          "description": "机器的IP地址"
+        },
+        "user": {
+          "label": "用户名",
+          "description": "连接的SSH用户名"
+        },
+        "datastore": {
+          "label": "数据存储路径",
+          "description": "存储数据的目录路径。 如果位于BTRFS文件系统上，它将利用本机功能。 否则，将在此处创建并安装BTRFS存储池文件以启用快照和压缩"
+        },
+        "port": {
+          "label": "SSH端口",
+          "description": "SSH端口号"
+        },
+        "host_entry": {
+          "label": "主机条目",
+          "description": "SSH已知的主机进入安全验证"
+        },
+        "ssh_key_configured": {
+          "label": "SSH键已经配置",
+          "description": "检查一下是否已经在目标计算机上安装了SSH公钥"
+        },
+        "ssh_password": {
+          "label": "SSH密码（临时）",
+          "description": "初始SSH键设置的临时密码。 如果已经配置了SSH键，请留空。 此密码一次用于复制公共密钥，然后应删除安全性。"
+        }
+      },
+      "REPOSITORY": {
+        "description": "用于备份存储的存储库配置",
+        "name": {
+          "label": "存储库名称",
+          "description": "存储库标识符"
+        },
+        "credential": {
+          "label": "访问密码",
+          "description": "存储库访问密码（32个字符，字母数字 +特殊字符）"
+        },
+        "encryption": {
+          "label": "启用加密",
+          "description": "启用对存储库的加密"
+        },
+        "retention": {
+          "label": "保留政策",
+          "description": "保留政策设置"
+        },
+        "schedule": {
+          "label": "备份时间表",
+          "description": "自动备份的CRON表达"
+        }
+      },
+      "STORAGE": {
+        "entityDescription": "备份目的地的存储配置",
+        "name": {
+          "label": "存储名称",
+          "description": "此存储配置的唯一名称"
+        },
+        "provider": {
+          "label": "存储提供商",
+          "description": "选择存储提供商类型"
+        },
+        "description": {
+          "label": "描述",
+          "description": "此存储配置的可选描述"
+        },
+        "noVersioning": {
+          "label": "禁用版本控制",
+          "description": "禁用此存储的版本控制"
+        },
+        "parameters": {
+          "label": "其他参数",
+          "description": "高级配置的其他RCLONE参数"
+        }
+      },
+      "SCHEDULE": {
+        "description": "安排自动任务的配置",
+        "cron": {
+          "label": "cron表达",
+          "description": "Cron表达式定义时间表"
+        },
+        "timezone": {
+          "label": "时区",
+          "description": "时间区用于执行时间表"
+        },
+        "enabled": {
+          "label": "启用时间表",
+          "description": "该时间表是否处于活动状态"
+        }
+      },
+      "BRIDGE": {
+        "description": "网络连接的桥梁配置",
+        "ip": {
+          "label": "IP地址",
+          "description": "桥服务器的IP地址"
+        }
+      },
+      "REGION": {
+        "description": "地理分布的区域配置",
+        "name": {
+          "label": "区域名称",
+          "description": "地理区域的名称"
+        },
+        "code": {
+          "label": "区域代码",
+          "description": "该地区的简短代码"
+        }
+      },
+      "TEAM": {
+        "description": "组织结构的团队配置",
+        "name": {
+          "label": "团队名称",
+          "description": "团队的名字"
+        },
+        "teamDescription": {
+          "label": "团队描述",
+          "description": "团队目的和职责的描述"
+        },
+        "SSH_PRIVATE_KEY": {
+          "label": "SSH私钥",
+          "description": "BASE64编码的SSH私钥用于团队运营"
+        },
+        "SSH_PUBLIC_KEY": {
+          "label": "SSH公钥",
+          "description": "SSH的团队运营公共密钥"
+        }
+      },
+      "USER": {
+        "description": "个人设置的用户配置",
+        "SSH_PRIVATE_KEY": {
+          "label": "SSH私钥",
+          "description": "base64编码的用于用户操作的SSH专用密钥"
+        },
+        "SSH_PUBLIC_KEY": {
+          "label": "SSH公钥",
+          "description": "用于用户操作的SSH公钥"
+        }
+      },
+      "COMPANY": {
+        "description": "公司范围内设置的公司配置",
+        "UNIVERSAL_USER_ID": {
+          "label": "通用用户ID",
+          "description": "系统操作的通用用户ID"
+        },
+        "UNIVERSAL_USER_NAME": {
+          "label": "通用用户名",
+          "description": "系统操作的通用用户名"
+        },
+        "DOCKER_JSON_CONF": {
+          "label": "Docker配置",
+          "description": "Docker注册表身份验证配置"
+        },
+        "SSH_PRIVATE_KEY": {
+          "label": "SSH私钥",
+          "description": "基本64编码的SSH私钥用于公司运营"
+        },
+        "SSH_PUBLIC_KEY": {
+          "label": "SSH公钥",
+          "description": "SSH公共密钥用于公司运营"
+        },
+        "LOG_FILE": {
+          "label": "日志文件路径",
+          "description": "系统日志文件的路径"
+        },
+        "PLUGINS": {
+          "label": "插件",
+          "description": "带有容器图像和激活状态的插件配置"
+        }
+      },
+      "CLUSTER": {
+        "description": "配置CEPH分布式存储集群设置",
+        "monitors": {
+          "label": "监视节点",
+          "description": "群集中的监视节点列表"
+        },
+        "mgrs": {
+          "label": "经理节点",
+          "description": "集群中的经理节点列表"
+        },
+        "osds": {
+          "label": "OSD节点",
+          "description": "OSD列表（对象存储守护程序）节点"
+        },
+        "mds": {
+          "label": "MDS节点",
+          "description": "MDS（元数据服务器）节点的列表"
+        },
+        "fsid": {
+          "label": "文件系统ID",
+          "description": "CEPH群集（UUID格式）的唯一标识符"
+        },
+        "config": {
+          "label": "配置",
+          "description": "其他集群配置选项"
+        }
+      },
+      "POOL": {
+        "description": "配置CEPH存储池设置",
+        "pg_num": {
+          "label": "放置组",
+          "description": "游泳池的放置组数量"
+        },
+        "pgp_num": {
+          "label": "PGP编号",
+          "description": "用于安置目的的安置组数量"
+        },
+        "size": {
+          "label": "复制大小",
+          "description": "池中对象的副本数量"
+        },
+        "min_size": {
+          "label": "最小尺寸",
+          "description": "I/O所需的最小复制品数量"
+        },
+        "crush_rule": {
+          "label": "粉碎规则",
+          "description": "数据放置的压缩规则名称"
+        },
+        "application": {
+          "label": "应用",
+          "description": "池的应用类型（例如RBD，CEPHFS）"
+        }
+      },
+      "IMAGE": {
+        "description": "配置RBD图像设置",
+        "size": {
+          "label": "图像大小",
+          "description": "RBD图像的大小（例如10G，1T）"
+        },
+        "features": {
+          "label": "特征",
+          "description": "RBD功能可以启用图像"
+        },
+        "object_size": {
+          "label": "对象大小",
+          "description": "图像中的对象大小"
+        },
+        "stripe_unit": {
+          "label": "条纹单元",
+          "description": "图像的条纹单位尺寸"
+        },
+        "stripe_count": {
+          "label": "条纹计数",
+          "description": "图像的条纹数量"
+        },
+        "data_pool": {
+          "label": "数据库",
+          "description": "单独存储图像数据的池"
+        }
+      },
+      "SNAPSHOT": {
+        "description": "配置RBD快照设置",
+        "protected": {
+          "label": "受保护",
+          "description": "快照是否免受删除"
+        },
+        "timestamp": {
+          "label": "时间戳",
+          "description": "创建快照的时间戳"
+        },
+        "size": {
+          "label": "快照尺寸",
+          "description": "快照的大小"
+        }
+      },
+      "CLONE": {
+        "description": "配置RBD克隆设置",
+        "parent_pool": {
+          "label": "父池",
+          "description": "池包含父图像"
+        },
+        "parent_image": {
+          "label": "父图像",
+          "description": "父映像的名称"
+        },
+        "parent_snapshot": {
+          "label": "父快照",
+          "description": "父母的名称"
+        },
+        "features": {
+          "label": "特征",
+          "description": "克隆的RBD功能"
+        },
+        "size": {
+          "label": "克隆大小",
+          "description": "克隆图像的大小"
+        }
+      }
+    }
+  },
+  "fieldGenerator": {
+    "title": {
+      "ssh_keys": "生成SSH密钥对",
+      "repository_credential": "生成存储库凭据"
+    },
+    "tooltip": "产生值",
+    "generate": "产生",
+    "regenerate": "再生",
+    "apply": "申请",
+    "cancel": "取消",
+    "copy": "复制",
+    "copied": "复制！",
+    "keyType": "密钥类型",
+    "keySize": "钥匙尺寸",
+    "moreSecure": "更安全",
+    "comingSoon": "即将推出",
+    "generationSuccess": "成功生成",
+    "generationError": "无法生成。 请重试。",
+    "applied": "成功应用的值",
+    "copyError": "未能复制到剪贴板"
+  },
+  "notifications": {
+    "title": "通知",
+    "empty": "没有通知",
+    "markAllRead": "将所有内容标记为阅读",
+    "clearAll": "清除全部"
+  },
+  "warnings": {
+    "sandboxEnvironment": "沙盒环境",
+    "sandboxMessage": "数据可能在更新过程中重置。 仅用于测试。"
+  },
+  "nestedObjectEditor": {
+    "Image": "图像",
+    "Active": "积极的",
+    "Add": "添加",
+    "Delete this entry?": "删除此条目？",
+    "Yes": "是的",
+    "No": "不",
+    "Object": "目的",
+    "Array": "大批",
+    "True": "真的",
+    "False": "错误的",
+    "Enter key name": "输入密钥名称",
+    "Show JSON": "表演Json",
+    "Hide JSON": "隐藏JSON",
+    "No entries": "没有条目",
+    "Raw JSON Editor": "RAW JSON编辑",
+    "JSON Error": "JSON错误",
+    "Uniform Structure": "统一结构",
+    "Fields": "字段",
+    "Container Images Detected": "检测到的容器图像",
+    "Plugin Configuration Detected": "检测到插件配置",
+    "Uniform Structure Detected": "检测到均匀的结构"
+  }
+}

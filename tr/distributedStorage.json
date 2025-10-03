@@ -1,0 +1,159 @@
+{
+  "title": "Dağıtılmış Depolama",
+  "description": "Dağıtılmış depolama kümelerini, havuzları, resimleri ve anlık görüntüleri yönetin",
+  "clusters": {
+    "title": "Kümeler",
+    "name": "Küme adı",
+    "createCluster": "Küme Oluştur",
+    "editCluster": "Kümeyi Düzenle",
+    "deleteCluster": "Kümeyi sil",
+    "clusterDetails": "Küme detayları",
+    "fsid": "Gıcırdatmak",
+    "secretKey": "Gizli anahtar",
+    "monitorHosts": "Monitör ana bilgisayarları",
+    "configureVault": "Kasayı Yapılandırın",
+    "assignMachines": "Makineler atayın",
+    "manageMachines": "Makineleri Yönetin",
+    "availableMachines": "Mevcut makineler",
+    "assignedMachines": "Atanan Makineler",
+    "removeFromCluster": "Kümeden kaldır",
+    "noMachinesAssigned": "Bu kümeye atanan makine yok"
+  },
+  "pools": {
+    "title": "Havuzlar",
+    "name": "Havuz adı",
+    "create": "Havuz Oluştur",
+    "noPools": "Havuz bulunamadı",
+    "createPool": "Havuz Oluştur",
+    "editPool": "Havuzu Düzenle",
+    "deletePool": "Havuzu Sil",
+    "poolDetails": "Havuz detayları",
+    "poolId": "Havuz kimliği",
+    "size": "Boyut",
+    "minSize": "Min Boyut",
+    "pgNum": "PG numarası",
+    "pgpNum": "PGP numarası",
+    "crush": "Ezme kuralı",
+    "configureVault": "Kasayı Yapılandırın"
+  },
+  "images": {
+    "title": "Görüntüler",
+    "name": "Resim adı",
+    "assignedMachine": "Atanan makine",
+    "reassignMachine": "Makineyi yeniden atama",
+    "reassignmentSuccess": "Görüntü makinesi ataması başarıyla güncellendi",
+    "reassignmentModal": {
+      "title": "Görüntüyü makineye yeniden atayın",
+      "currentAssignment": "Mevcut Görev",
+      "selectNewMachine": "Yeni Makine Seçin",
+      "noMachineAssigned": "Şu anda atandı makine yok",
+      "warning": "UYARI: Bir görüntünün farklı bir makineye yeniden atanması, veriler taşınana kadar geçerli makinede kullanılamaz hale getirmez."
+    }
+  },
+  "snapshots": {
+    "title": "Anlık görüntüler"
+  },
+  "clones": {
+    "title": "Klonlar",
+    "assignMachines": "Makineler atayın",
+    "assignedMachines": "Atanan Makineler",
+    "machineManager": "Makine yöneticisi",
+    "addMachine": "Makine Ekle",
+    "removeMachine": "Makineyi Kaldır",
+    "removeSelectedMachines": "Seçilen makineleri kaldırın",
+    "exportMachines": "İhracat makineleri",
+    "searchMachines": "Arama makineleri ...",
+    "statistics": "İstatistik",
+    "totalMachines": "Toplam Makineler",
+    "noMachinesAssigned": "Bu klona atanan makine yok"
+  },
+  "assignment": {
+    "status": "Atama durumu",
+    "available": "Mevcut",
+    "assignedToCluster": "Kümeye atandı",
+    "assignedToImage": "Resme atandı",
+    "assignedToClone": "Klona atandı",
+    "viewStatus": "Atama Durumunu Görüntüle",
+    "history": "Atama geçmişi",
+    "currentAssignment": "Mevcut Görev",
+    "none": "Hiçbiri",
+    "assignedTo": "{{Type}} adresine atandı: {{name}}",
+    "actions": {
+      "assignToCluster": "Kümeye atandı",
+      "removedFromCluster": "Kümeden kaldırıldı",
+      "assignedToImage": "Resme atandı",
+      "reassignedImage": "Yeniden atanan resim",
+      "assignedToClone": "Klona atandı",
+      "removedFromClone": "Klondan kaldırıldı"
+    }
+  },
+  "warnings": {
+    "exclusivity": "Makineler bir seferde yalnızca bir kaynağa atanabilir (küme, görüntü veya klon).",
+    "exclusivityCluster": "Bu makine şu anda bir kümeye atanmıştır. Başka bir yere atanmadan önce kümeden çıkarılmalıdır.",
+    "exclusivityImage": "Bu makine şu anda bir görüntüye atanmıştır. Bu makine başka bir yerde kullanılabilmeden önce görüntü yeniden atanmalıdır.",
+    "exclusivityClone": "Bu makine şu anda bir klona atanmıştır. Başka bir yere atanmadan önce klondan çıkarılmalıdır.",
+    "dataLoss": "UYARI: Makinelerin kaldırılması, uygun şekilde göç edilmezse veri kaybına neden olabilir.",
+    "reassignment": "Kaynakların yeniden atanması, hizmet kesintisini önlemek için dikkatli bir planlamayı gerektirir."
+  },
+  "machineSection": {
+    "title": "Dağıtılmış Depolama",
+    "notAssigned": "Herhangi bir dağıtılmış depolama kaynağına atanmadı",
+    "viewDetails": "Ayrıntıları Görüntüle",
+    "manageAssignment": "Ödevi Yönetin"
+  },
+  "tabs": {
+    "clusters": "Kümeler",
+    "pools": "Havuzlar",
+    "machines": "Makineler"
+  },
+  "machines": {
+    "summary": {
+      "title": "Makine Kullanılabilirliği",
+      "total": "Toplam Makineler",
+      "available": "Mevcut",
+      "assignedToClusters": "Kümelere atandı",
+      "assignedToImages": "Görüntülere atandı",
+      "assignedToClones": "Klonlara atandı"
+    },
+    "filters": {
+      "assignmentStatus": "Atama durumu",
+      "allStatuses": "Tüm Durumlar",
+      "searchPlaceholder": "Arama makineleri ..."
+    },
+    "actions": {
+      "viewDetails": "Ayrıntıları Görüntüle",
+      "removeAssignment": "Ödevi Kaldır",
+      "exportReport": "İhracat raporu"
+    }
+  },
+  "common": {
+    "loading": "Yükleme ...",
+    "error": "Hata",
+    "success": "Başarı",
+    "confirm": "Onaylamak",
+    "cancel": "İptal etmek",
+    "save": "Kaydetmek",
+    "delete": "Silmek",
+    "edit": "Düzenlemek",
+    "close": "Kapalı",
+    "refresh": "Yenilemek",
+    "actions": "Eylem",
+    "details": "Detaylar"
+  },
+  "dashboard": {
+    "title": "Dağıtılmış Depolama Makineleri",
+    "subtitle": "{{total}} Tüm takımlarda toplam makineler",
+    "clusterSummary": "Küme özeti",
+    "totalClusters": "Toplam kümeler",
+    "avgMachinesPerCluster": "AVG makineleri/küme",
+    "machineUtilization": "Makine kullanımı",
+    "utilizationDetails": "{{kullanılmış}} {{total}} makinelerin kullanımda",
+    "teamBreakdown": "Takım Makinesi Dağıtım"
+  },
+  "assignmentStatus": {
+    "available": "Mevcut",
+    "cluster": "Küme",
+    "image": "İmaj",
+    "clone": "Klon"
+  }
+}

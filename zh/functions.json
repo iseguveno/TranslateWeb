@@ -1,0 +1,411 @@
+{
+  "availableFunctions": "可用功能",
+  "selectFunction": "选择功能",
+  "searchFunctions": "搜索功能...",
+  "configure": "配置",
+  "selectFunctionToConfigure": "选择要配置的功能",
+  "priority": "优先事项",
+  "priorityHelp": "任务首先按优先级处理，然后按年龄处理",
+  "priorityHighest": "最高",
+  "priorityHigh": "高的",
+  "priorityAboveNormal": "高于正常",
+  "priorityNormal": "高于正常",
+  "priorityBelowNormal": "普通的",
+  "priorityLow": "低的",
+  "currentPriority": "当前的",
+  "priorityHighestWarning": "最高优先级（1）",
+  "priorityHighestDescription": "提交最高优先级任务将自动取消您执行的任何现有最高优先级任务。 仅用于需要立即关注的紧急关键任务。",
+  "priorityHighWarning": "高优先级（2）",
+  "priorityHighDescription": "允许多个并发高优先级任务。 用于需要更快处理的重要任务。",
+  "priorityNormalWarning": "高于正常优先级（3）",
+  "priorityNormalDescription": "比标准处理速度快。 用于比正常处理更快的处理任务。",
+  "priorityLowWarning": "正常优先级（4）",
+  "priorityLowDescription": "标准处理速度。 建议用于大多数操作和日常任务。",
+  "priorityLowestWarning": "最低优先级（5）",
+  "priorityLowestDescription": "处理速度最慢。 用于批处理操作或任务无时间限制。",
+  "description": "描述（可选）",
+  "descriptionPlaceholder": "为此队列项目添加自定义描述",
+  "validationError": "验证错误",
+  "missingRequiredParams": "请填写所有必需的参数：{{params}}",
+  "categories": {
+    "machine": {
+      "name": "机器功能",
+      "description": "核心系统设置和维护功能"
+    },
+    "repository": {
+      "name": "存储库功能",
+      "description": "存储库管理和操作"
+    },
+    "backup": {
+      "name": "备份功能",
+      "description": "备份和还原操作"
+    },
+    "network": {
+      "name": "网络功能",
+      "description": "网络和插座映射操作"
+    },
+    "container": {
+      "name": "容器功能",
+      "description": "Docker容器管理操作"
+    }
+  },
+  "functions": {
+    "setup": {
+      "name": "设置",
+      "description": "设置操作系统带有必需的工具和配置",
+      "params": {
+        "datastore_size": {
+          "label": "数据存储大小",
+          "help": "数据存储尺寸（例如95％，100G）"
+        },
+        "source": {
+          "label": "来源",
+          "help": "包源"
+        },
+        "rclone_source": {
+          "label": "RCLONE安装源",
+          "help": "如何安装rclone（install-script =官方脚本，package-manager = apt/dnf，手动= skip）"
+        },
+        "docker_source": {
+          "label": "Docker安装源",
+          "help": "如何安装docker（docker-repo =官方存储库，package-manager = os packages，snap = snap store，手动= skip）"
+        },
+        "install_amd_driver": {
+          "label": "安装AMD GPU驱动程序",
+          "help": "安装AMD GPU驱动程序（自动=首先检测GPU，true =始终安装，false = skip）"
+        },
+        "install_nvidia_driver": {
+          "label": "安装NVIDIA GPU驱动程序",
+          "help": "安装NVIDIA GPU驱动程序（auto =首先检测GPU，true =始终安装，false = skip）"
+        }
+      }
+    },
+    "hello": {
+      "name": "你好",
+      "description": "简单的测试功能，从主机名打印Hello"
+    },
+    "uninstall": {
+      "name": "卸载",
+      "description": "清理和卸载系统组件"
+    },
+    "new": {
+      "name": "新的",
+      "description": "创建一个新的存储库",
+      "params": {
+        "repo": {
+          "label": "存储库",
+          "help": "存储库名称"
+        },
+        "size": {
+          "label": "尺寸",
+          "help": "存储库大小（例如10G）"
+        }
+      }
+    },
+    "mount": {
+      "name": "山",
+      "description": "安装存储库文件系统",
+      "params": {
+        "repo": {
+          "label": "存储库",
+          "help": "存储库名称，逗号分隔"
+        },
+        "from": {
+          "label": "来自机器",
+          "help": "远程机器从"
+        }
+      }
+    },
+    "unmount": {
+      "name": "卸载",
+      "description": "卸载存储库文件系统",
+      "params": {
+        "repo": {
+          "label": "存储库",
+          "help": "存储库名称，逗号分隔"
+        },
+        "from": {
+          "label": "来自机器",
+          "help": "远程机器从"
+        }
+      }
+    },
+    "up": {
+      "name": "向上",
+      "description": "使用RediAccfile启动存储库服务",
+      "params": {
+        "repo": {
+          "label": "存储库",
+          "help": "存储库名称，逗号分隔"
+        },
+        "option": {
+          "label": "选项",
+          "help": "选项（例如，仅预先准备）"
+        }
+      }
+    },
+    "down": {
+      "name": "向下",
+      "description": "停止存储库服务",
+      "params": {
+        "repo": {
+          "label": "存储库",
+          "help": "存储库名称，逗号分隔"
+        },
+        "option": {
+          "label": "选项",
+          "help": "其他选项"
+        }
+      }
+    },
+    "resize": {
+      "name": "调整大小",
+      "description": "调整存储库存储大小",
+      "params": {
+        "repo": {
+          "label": "存储库",
+          "help": "存储库名称"
+        },
+        "size": {
+          "label": "新尺寸",
+          "help": "新尺寸（例如20G）"
+        }
+      }
+    },
+    "rm": {
+      "name": "RM",
+      "description": "删除存储库",
+      "params": {
+        "repo": {
+          "label": "存储库",
+          "help": "存储库名称"
+        }
+      }
+    },
+    "plugin": {
+      "name": "插件",
+      "description": "激活存储库插件",
+      "params": {
+        "repo": {
+          "label": "存储库",
+          "help": "存储库名称，逗号分隔"
+        },
+        "plugin": {
+          "label": "插件",
+          "help": "插件名称，逗号分隔"
+        }
+      }
+    },
+    "plugout": {
+      "name": "插头",
+      "description": "停用存储库插件",
+      "params": {
+        "repo": {
+          "label": "存储库",
+          "help": "存储库名称，逗号分隔"
+        },
+        "plugin": {
+          "label": "插件",
+          "help": "插件名称，逗号分隔"
+        }
+      }
+    },
+    "ownership": {
+      "name": "所有权",
+      "description": "更改存储库所有权",
+      "params": {
+        "repo": {
+          "label": "存储库",
+          "help": "存储库名称"
+        },
+        "from": {
+          "label": "当前所有者",
+          "help": "当前所有者"
+        },
+        "to": {
+          "label": "新主人",
+          "help": "新所有者（默认：通用用户）"
+        }
+      }
+    },
+    "list": {
+      "name": "列出远程文件",
+      "description": "在远程存储位置列出文件",
+      "params": {
+        "from": {
+          "label": "来源位置",
+          "help": "机器或存储系统以列出文件"
+        },
+        "path": {
+          "label": "小路",
+          "help": "存储中的可选路径"
+        },
+        "format": {
+          "label": "输出格式",
+          "help": "文件列表的格式"
+        }
+      }
+    },
+    "push": {
+      "name": "推",
+      "description": "将存储库推向远程存储",
+      "params": {
+        "repo": {
+          "label": "存储库",
+          "help": "存储库名称，逗号分隔"
+        },
+        "dest": {
+          "label": "目标文件名",
+          "help": "备份文件的名称"
+        },
+        "destinationType": {
+          "label": "目标类型",
+          "help": "选择是推到机器还是存储"
+        },
+        "to": {
+          "label": "目的地",
+          "help": "选择目标机器或存储"
+        },
+        "state": {
+          "label": "所需状态",
+          "help": "验证存储库是在线或脱机之前的"
+        },
+        "option": {
+          "label": "选项",
+          "help": "选项（例如，覆盖）"
+        }
+      }
+    },
+    "pull": {
+      "name": "拉",
+      "description": "从远程存储中提取存储库",
+      "params": {
+        "sourceType": {
+          "label": "源类型",
+          "help": "选择是从机器还是存储中拉"
+        },
+        "from": {
+          "label": "来源",
+          "help": "选择源机或存储"
+        },
+        "repo": {
+          "label": "存储库",
+          "help": "存储库名称，逗号分隔"
+        }
+      }
+    },
+    "ping": {
+      "name": "ping",
+      "description": "测试网络连接到机器"
+    },
+    "container_start": {
+      "name": "Container_start",
+      "description": "启动Docker容器",
+      "params": {
+        "container": {
+          "label": "容器",
+          "help": "容器名称或ID"
+        }
+      }
+    },
+    "container_stop": {
+      "name": "Container_Stop",
+      "description": "停止运行的Docker容器",
+      "params": {
+        "container": {
+          "label": "容器",
+          "help": "容器名称或ID"
+        }
+      }
+    },
+    "container_restart": {
+      "name": "container_restart",
+      "description": "重新启动Docker容器",
+      "params": {
+        "container": {
+          "label": "容器",
+          "help": "容器名称或ID"
+        }
+      }
+    },
+    "container_remove": {
+      "name": "Container_Remove",
+      "description": "卸下Docker容器",
+      "params": {
+        "container": {
+          "label": "容器",
+          "help": "容器名称或ID"
+        },
+        "force": {
+          "label": "武力去除",
+          "help": "拆除运行容器"
+        }
+      }
+    },
+    "container_logs": {
+      "name": "container_logs",
+      "description": "查看Docker容器日志",
+      "params": {
+        "container": {
+          "label": "容器",
+          "help": "容器名称或ID"
+        },
+        "lines": {
+          "label": "线",
+          "help": "要显示的行数（默认值：100）"
+        },
+        "follow": {
+          "label": "遵循日志",
+          "help": "实时关注日志输出"
+        }
+      }
+    },
+    "container_inspect": {
+      "name": "Container_Inspect",
+      "description": "检查Docker容器详细信息",
+      "params": {
+        "container": {
+          "label": "容器",
+          "help": "容器名称或ID"
+        }
+      }
+    },
+    "container_stats": {
+      "name": "container_stats",
+      "description": "显示Docker容器资源使用统计信息",
+      "params": {
+        "container": {
+          "label": "容器",
+          "help": "容器名称或ID（可选 - 显示全部如果为空）"
+        }
+      }
+    },
+    "container_pause": {
+      "name": "container_pause",
+      "description": "暂停运行的码头容器",
+      "params": {
+        "container": {
+          "label": "容器",
+          "help": "容器名称或ID"
+        }
+      }
+    },
+    "container_unpause": {
+      "name": "Container_unpause",
+      "description": "解开暂停的码头容器",
+      "params": {
+        "container": {
+          "label": "容器",
+          "help": "容器名称或ID"
+        }
+      }
+    }
+  },
+  "checkboxOptions": {
+    "mountRepositoryFirst": "安装存储库首先",
+    "preparationOnly": "仅准备",
+    "unmountAfterStopping": "停止后卸载",
+    "overrideExistingFile": "覆盖现有文件"
+  },
+  "additionalOptions": "其他选项（高级）"
+}

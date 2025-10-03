@@ -1,0 +1,411 @@
+{
+  "availableFunctions": "Mövcud funksiyalar",
+  "selectFunction": "Funksiya seçin",
+  "searchFunctions": "Axtarış funksiyaları ...",
+  "configure": "Konfiqurasiya etmək",
+  "selectFunctionToConfigure": "Konfiqurasiya etmək üçün bir funksiya seçin",
+  "priority": "Prioritet",
+  "priorityHelp": "Tapşırıqlar əvvəlcə prioritet tərəfindən işlənir, sonra yaşına görə",
+  "priorityHighest": "Ən yüksək",
+  "priorityHigh": "Yüksək",
+  "priorityAboveNormal": "Normadan yuxarı",
+  "priorityNormal": "Normadan yuxarı",
+  "priorityBelowNormal": "Normal",
+  "priorityLow": "Alçaq",
+  "currentPriority": "Cərəyan",
+  "priorityHighestWarning": "Ən yüksək prioritet (1)",
+  "priorityHighestDescription": "Ən yüksək prioritet tapşırıq təqdim etmək, mövcud olan ən yüksək prioritet tapşırıqları avtomatik olaraq ləğv edəcəkdir. Yalnız diqqətə ehtiyacı olan təcili kritik tapşırıqlar üçün istifadə edin.",
+  "priorityHighWarning": "Yüksək prioritet (2)",
+  "priorityHighDescription": "Çoxsaylı eyni zamanda yüksək prioritet vəzifələrə imkan verir. Daha sürətli işlənməyə ehtiyacı olan vacib vəzifələr üçün istifadə edin.",
+  "priorityNormalWarning": "Normal prioritetdən yuxarı (3)",
+  "priorityNormalDescription": "Standart emal sürətindən daha sürətli. Normaldan daha sürətli emalı ehtiyacı olan vəzifələr üçün istifadə edin.",
+  "priorityLowWarning": "Normal prioritet (4)",
+  "priorityLowDescription": "Standart emal sürəti. Əksər əməliyyatlar və gündəlik vəzifələr üçün tövsiyə olunur.",
+  "priorityLowestWarning": "Ən aşağı prioritet (5)",
+  "priorityLowestDescription": "Ən yavaş emal sürəti. Vaxt məhdudiyyəti olmayan toplu əməliyyatlar və ya tapşırıqlar üçün istifadə edin.",
+  "description": "Təsvir (isteğe bağlı)",
+  "descriptionPlaceholder": "Bu növbə maddəsi üçün xüsusi bir təsvir əlavə edin",
+  "validationError": "Təsdiqləmə xətası",
+  "missingRequiredParams": "Zəhmət olmasa, bütün tələb olunan parametrləri doldurun: {{Params}}",
+  "categories": {
+    "machine": {
+      "name": "Maşın funksiyaları",
+      "description": "Core Sistem Quraşdırma və Baxım funksiyaları"
+    },
+    "repository": {
+      "name": "Depo funksiyaları",
+      "description": "Depozitariya idarəetmə və əməliyyatlar"
+    },
+    "backup": {
+      "name": "Yedəkləmə funksiyaları",
+      "description": "Əməliyyatların ehtiyat nüsxəsini çıxarın və bərpa edin"
+    },
+    "network": {
+      "name": "Şəbəkə funksiyaları",
+      "description": "Şəbəkə və Soket Xəritəçəkmə Əməliyyatları"
+    },
+    "container": {
+      "name": "Konteyner funksiyaları",
+      "description": "Docker konteyner idarəetmə əməliyyatları"
+    }
+  },
+  "functions": {
+    "setup": {
+      "name": "quraşdırmaq",
+      "description": "Lazımi alətlər və konfiqurasiya ilə əməliyyat sistemi",
+      "params": {
+        "datastore_size": {
+          "label": "Datastore ölçüsü",
+          "help": "Datastore ölçüsü (məs., 95%, 100g)"
+        },
+        "source": {
+          "label": "Mənbəyi",
+          "help": "Paket mənbəyi"
+        },
+        "rclone_source": {
+          "label": "Rclone quraşdırma mənbəyi",
+          "help": "Rclone necə quraşdırmaq olar (Quraşdırma = Rəsmi skript, Paket-Manager = Apt / DNF, Manual = Skip)"
+        },
+        "docker_source": {
+          "label": "Docker quraşdırma mənbəyi",
+          "help": "Docker'i necə quraşdırmaq olar (Docker-Repo = rəsmi depo, paket meneceri = OS paketləri, Snap = Snap Mağazası, Manual = Skip)"
+        },
+        "install_amd_driver": {
+          "label": "AMD GPU sürücüsünü quraşdırın",
+          "help": "AMD GPU sürücüləri quraşdırın (Auto = GPU-nu əvvəlcə aşkar edin, doğru = həmişə quraşdırın, saxta = atlayın)"
+        },
+        "install_nvidia_driver": {
+          "label": "Nvidia GPU sürücüsünü quraşdırın",
+          "help": "Nvidia GPU sürücüləri quraşdırın (Auto = GPU-nu əvvəlcə aşkar edin, Həqiqi = Həmişə Quraşdırın, False = Skip)"
+        }
+      }
+    },
+    "hello": {
+      "name": "salamat",
+      "description": "Host adından salam yazan sadə test funksiyası"
+    },
+    "uninstall": {
+      "name": "silmək",
+      "description": "Sistem komponentlərini təmizləyin və silin"
+    },
+    "new": {
+      "name": "yeni",
+      "description": "Yeni bir depo yaradın",
+      "params": {
+        "repo": {
+          "label": "Depo",
+          "help": "Depo adı"
+        },
+        "size": {
+          "label": "Ölçü",
+          "help": "Depo ölçüsü (məs.g., 10g)"
+        }
+      }
+    },
+    "mount": {
+      "name": "qoymaq",
+      "description": "Mount depo fayl sistemləri",
+      "params": {
+        "repo": {
+          "label": "Depo",
+          "help": "Depozitor adı (lar), vergüllə ayrılmışdır"
+        },
+        "from": {
+          "label": "Dəzgahdan",
+          "help": "Qurmaq üçün uzaq maşın"
+        }
+      }
+    },
+    "unmount": {
+      "name": "silmək",
+      "description": "Depozitoritoristlər",
+      "params": {
+        "repo": {
+          "label": "Depo",
+          "help": "Depozitor adı (lar), vergüllə ayrılmışdır"
+        },
+        "from": {
+          "label": "Dəzgahdan",
+          "help": "Uzaqdan işləyən maşın"
+        }
+      }
+    },
+    "up": {
+      "name": "yuxarı",
+      "description": "Rediaccfile istifadə edərək depo xidmətlərinə başlayın",
+      "params": {
+        "repo": {
+          "label": "Depo",
+          "help": "Depozitor adı (lar), vergüllə ayrılmışdır"
+        },
+        "option": {
+          "label": "Seçimlər",
+          "help": "Seçimlər (məsələn, hazırlıq - yalnız)"
+        }
+      }
+    },
+    "down": {
+      "name": "aşağı",
+      "description": "Depozit xidmətləri dayandırın",
+      "params": {
+        "repo": {
+          "label": "Depo",
+          "help": "Depozitor adı (lar), vergüllə ayrılmışdır"
+        },
+        "option": {
+          "label": "Seçimlər",
+          "help": "Əlavə seçimlər"
+        }
+      }
+    },
+    "resize": {
+      "name": "ölçüsünü dəyişmək",
+      "description": "Depozitory anbarı dəyişdirmək",
+      "params": {
+        "repo": {
+          "label": "Depo",
+          "help": "Depo adı"
+        },
+        "size": {
+          "label": "Yeni ölçülü",
+          "help": "Yeni ölçülü (məs., 20 q)"
+        }
+      }
+    },
+    "rm": {
+      "name": "rm",
+      "description": "Depo silmək",
+      "params": {
+        "repo": {
+          "label": "Depo",
+          "help": "Depo adı"
+        }
+      }
+    },
+    "plugin": {
+      "name": "plugin",
+      "description": "Depozit pluginlərini aktivləşdirin",
+      "params": {
+        "repo": {
+          "label": "Depo",
+          "help": "Depozitor adı (lar), vergüllə ayrılmışdır"
+        },
+        "plugin": {
+          "label": "Plugin",
+          "help": "Plugin adı (lar), vergüllə ayrılmışdır"
+        }
+      }
+    },
+    "plugout": {
+      "name": "pugout",
+      "description": "Depozit pluginlərini deaktiv edin",
+      "params": {
+        "repo": {
+          "label": "Depo",
+          "help": "Depozitor adı (lar), vergüllə ayrılmışdır"
+        },
+        "plugin": {
+          "label": "Plugin",
+          "help": "Plugin adı (lar), vergüllə ayrılmışdır"
+        }
+      }
+    },
+    "ownership": {
+      "name": "mülkiyyət",
+      "description": "Depozitariya mülkiyyətini dəyişdirin",
+      "params": {
+        "repo": {
+          "label": "Depo",
+          "help": "Depo adı"
+        },
+        "from": {
+          "label": "Cari sahibi",
+          "help": "Cari sahibi"
+        },
+        "to": {
+          "label": "Sahibi",
+          "help": "Yeni sahibi (standart: universal istifadəçi)"
+        }
+      }
+    },
+    "list": {
+      "name": "Uzaqdan Faylları sadalayın",
+      "description": "Uzaqdan saxlama yerlərində faylları sadalayın",
+      "params": {
+        "from": {
+          "label": "Mənbə yeri",
+          "help": "Faylları sadalamaq üçün maşın və ya saxlama sistemi"
+        },
+        "path": {
+          "label": "Yol",
+          "help": "Saxlama daxilində isteğe bağlı yol"
+        },
+        "format": {
+          "label": "Çıxış formatı",
+          "help": "Fayl siyahısı üçün format"
+        }
+      }
+    },
+    "push": {
+      "name": "itələmək",
+      "description": "Uzaqdan saxlama üçün push tepiserini itələyin",
+      "params": {
+        "repo": {
+          "label": "Depo",
+          "help": "Depozitor adı (lar), vergüllə ayrılmışdır"
+        },
+        "dest": {
+          "label": "Təyinat fayl adı",
+          "help": "Yedek faylı üçün ad"
+        },
+        "destinationType": {
+          "label": "Təyinat növü",
+          "help": "Bir maşına və ya anbarda itələməyi seçin"
+        },
+        "to": {
+          "label": "Təyinat",
+          "help": "Təyinat maşını və ya saxlama seçin"
+        },
+        "state": {
+          "label": "Tələb olunan dövlət",
+          "help": "Doğrulama depozitoru itələmədən əvvəl onlayn və ya oflayndır"
+        },
+        "option": {
+          "label": "Seçimlər",
+          "help": "Seçimlər (məs.g., ləğv edin)"
+        }
+      }
+    },
+    "pull": {
+      "name": "Çəkmək",
+      "description": "Uzaqdan anbardan depo çəkin",
+      "params": {
+        "sourceType": {
+          "label": "Mənbə növü",
+          "help": "Bir maşın və ya anbardan çəkdiyinizi seçin"
+        },
+        "from": {
+          "label": "Mənbəyi",
+          "help": "Mənbə maşını və ya saxlama seçin"
+        },
+        "repo": {
+          "label": "Depo",
+          "help": "Depozitor adı (lar), vergüllə ayrılmışdır"
+        }
+      }
+    },
+    "ping": {
+      "name": "ping",
+      "description": "Maşına şəbəkə bağlantısını sınayın"
+    },
+    "container_start": {
+      "name": "konteyner_start",
+      "description": "Doker qabına başlayın",
+      "params": {
+        "container": {
+          "label": "Konteyner",
+          "help": "Konteyner adı və ya şəxsiyyəti"
+        }
+      }
+    },
+    "container_stop": {
+      "name": "konteyner_stop",
+      "description": "Çalışan Docker Konteynerini dayandırın",
+      "params": {
+        "container": {
+          "label": "Konteyner",
+          "help": "Konteyner adı və ya şəxsiyyəti"
+        }
+      }
+    },
+    "container_restart": {
+      "name": "konteyner_restart",
+      "description": "Docker konteynerini yenidən başladın",
+      "params": {
+        "container": {
+          "label": "Konteyner",
+          "help": "Konteyner adı və ya şəxsiyyəti"
+        }
+      }
+    },
+    "container_remove": {
+      "name": "konteyner_remove",
+      "description": "Doker qabını çıxarın",
+      "params": {
+        "container": {
+          "label": "Konteyner",
+          "help": "Konteyner adı və ya şəxsiyyəti"
+        },
+        "force": {
+          "label": "Zorlamaq",
+          "help": "Çalışan konteynerin çıxarılması"
+        }
+      }
+    },
+    "container_logs": {
+      "name": "konteyner_logs",
+      "description": "Docker konteyner qeydlərinə baxın",
+      "params": {
+        "container": {
+          "label": "Konteyner",
+          "help": "Konteyner adı və ya şəxsiyyəti"
+        },
+        "lines": {
+          "label": "Xətdə",
+          "help": "Göstərmək üçün xətlərin sayı (default: 100)"
+        },
+        "follow": {
+          "label": "Lövhələr",
+          "help": "Giriş çıxışını real vaxt rejimində izləyin"
+        }
+      }
+    },
+    "container_inspect": {
+      "name": "konteyner_inspect",
+      "description": "Docker konteyner təfərrüatlarını yoxlayın",
+      "params": {
+        "container": {
+          "label": "Konteyner",
+          "help": "Konteyner adı və ya şəxsiyyəti"
+        }
+      }
+    },
+    "container_stats": {
+      "name": "konteyner_stats",
+      "description": "Docker Konteyner Resurs İstifadəsi Statistikasını göstərin",
+      "params": {
+        "container": {
+          "label": "Konteyner",
+          "help": "Konteyner adı və ya şəxsiyyət vəsiqəsi (isteğe bağlı - boş olduqda hamısını göstərir)"
+        }
+      }
+    },
+    "container_pause": {
+      "name": "konteyner_pause",
+      "description": "Çalışan Docker konteynerini dayandırın",
+      "params": {
+        "container": {
+          "label": "Konteyner",
+          "help": "Konteyner adı və ya şəxsiyyəti"
+        }
+      }
+    },
+    "container_unpause": {
+      "name": "konteyner_unpaus",
+      "description": "Daimi Docker Konteynerinə Təsissiz",
+      "params": {
+        "container": {
+          "label": "Konteyner",
+          "help": "Konteyner adı və ya şəxsiyyəti"
+        }
+      }
+    }
+  },
+  "checkboxOptions": {
+    "mountRepositoryFirst": "Əvvəlcə depo dağı",
+    "preparationOnly": "Yalnız hazırlıq",
+    "unmountAfterStopping": "Dayandıqdan sonra çıxın",
+    "overrideExistingFile": "Mövcud faylı ləğv edin"
+  },
+  "additionalOptions": "Əlavə seçimlər (qabaqcıl)"
+}
